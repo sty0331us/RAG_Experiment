@@ -32,8 +32,8 @@ from src.visualizer import generate_all_plots
 def parse_args():
     p = argparse.ArgumentParser(description="RAG Experiment Runner")
     p.add_argument("--frameworks", nargs="+", default=None,
-                   choices=["llamaindex", "langchain"],
-                   help="Frameworks to test (default: both)")
+                   choices=["llamaindex", "langchain", "langgraph"],
+                   help="Frameworks to test (default: all three)")
     p.add_argument("--methods", nargs="+", default=None,
                    choices=["cosine", "euclidean", "dot_product", "manhattan", "bm25", "hybrid"],
                    help="Similarity methods to test (default: all)")
@@ -173,10 +173,12 @@ def main():
 
 
 def _build_rag(framework: str, chunks, vectors, cfg, method):
-    import numpy as np
     if framework == "llamaindex":
         from src.llamaindex_rag import LlamaIndexRAG
         return LlamaIndexRAG(chunks, vectors, cfg, method)
+    elif framework == "langgraph":
+        from src.langgraph_rag import LangGraphRAG
+        return LangGraphRAG(chunks, vectors, cfg, method)
     else:
         from src.langchain_rag import LangChainRAG
         return LangChainRAG(chunks, vectors, cfg, method)

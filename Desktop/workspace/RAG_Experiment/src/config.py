@@ -44,7 +44,7 @@ class ExperimentConfig:
     ])
 
     # ── Frameworks to benchmark ───────────────────────────────────────────
-    frameworks: List[str] = field(default_factory=lambda: ["llamaindex", "langchain"])
+    frameworks: List[str] = field(default_factory=lambda: ["llamaindex", "langchain", "langgraph"])
 
     # ── Paths ─────────────────────────────────────────────────────────────
     data_dir: Path = BASE_DIR / "data" / "pdfs"
