@@ -1,7 +1,7 @@
 framework,method,total_time_s,retrieval_time_s,gen_time_s,avg_ctx_relevance,answer_length,num_retrieved,n_queries
-langchain,cosine,6.8152,0.0555,6.7597,0.6245,171.3333,5.0000,15
-langchain,euclidean,7.0204,0.0229,6.9975,0.6245,171.7333,5.0000,15
-langchain,dot_product,7.3562,0.0196,7.3366,0.6245,171.7333,5.0000,15
-langchain,manhattan,7.8691,0.0061,7.8630,0.6232,203.8000,5.0000,15
-langchain,hybrid,8.2262,0.0450,8.1812,0.5949,188.4667,5.0000,15
-langchain,bm25,6.4331,0.0019,6.4312,0.5072,144.0000,5.0000,15
+langgraph,cosine,6.9699,0.0453,6.9246,0.6245,171.3333,5.0000,15
+langgraph,euclidean,6.7462,0.0379,6.7083,0.6245,171.7333,5.0000,15
+langgraph,dot_product,7.0549,0.0428,7.0121,0.6245,171.7333,5.0000,15
+langgraph,manhattan,7.4404,0.0050,7.4353,0.6232,203.8000,5.0000,15
+langgraph,hybrid,8.1491,0.0554,8.0937,0.5949,188.4667,5.0000,15
+langgraph,bm25,6.3118,0.0107,6.3012,0.5072,144.0000,5.0000,15
