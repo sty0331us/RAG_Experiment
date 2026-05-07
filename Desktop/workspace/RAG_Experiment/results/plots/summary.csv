@@ -1,0 +1,7 @@
+framework,method,total_time_s,retrieval_time_s,gen_time_s,avg_ctx_relevance,answer_length,num_retrieved,n_queries
+langchain,cosine,6.8152,0.0555,6.7597,0.6245,171.3333,5.0000,15
+langchain,euclidean,7.0204,0.0229,6.9975,0.6245,171.7333,5.0000,15
+langchain,dot_product,7.3562,0.0196,7.3366,0.6245,171.7333,5.0000,15
+langchain,manhattan,7.8691,0.0061,7.8630,0.6232,203.8000,5.0000,15
+langchain,hybrid,8.2262,0.0450,8.1812,0.5949,188.4667,5.0000,15
+langchain,bm25,6.4331,0.0019,6.4312,0.5072,144.0000,5.0000,15

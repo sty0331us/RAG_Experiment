@@ -1,0 +1,722 @@
+[
+  {
+    "query": "냉장고 냉동실 온도를 조절하는 방법은?",
+    "method": "cosine",
+    "elapsed_s": 0.10876979201566428,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6370753049850464,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고 냉동실 온도를 조절하는 방법은?",
+    "method": "euclidean",
+    "elapsed_s": 0.000191416940651834,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.7258496880531311,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고 냉동실 온도를 조절하는 방법은?",
+    "method": "dot_product",
+    "elapsed_s": 6.829202175140381e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6370755434036255,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고 냉동실 온도를 조절하는 방법은?",
+    "method": "manhattan",
+    "elapsed_s": 0.004421917023137212,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.588284882695916,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고 냉동실 온도를 조절하는 방법은?",
+    "method": "bm25",
+    "elapsed_s": 0.004018916981294751,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고 냉동실 온도를 조절하는 방법은?",
+    "method": "hybrid",
+    "elapsed_s": 0.0003563750069588423,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028474711270410194,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
+    "method": "cosine",
+    "elapsed_s": 6.137497257441282e-05,
+    "top1_text": "Operations\nEnglish48 \n    SmartThings  \n    Installation  \n Visit the Google Play Store, Galaxy Apps, or Apple App Store",
+    "top1_score": 0.6505534052848816,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
+    "method": "euclidean",
+    "elapsed_s": 2.2541964426636696e-05,
+    "top1_text": "Operations\nEnglish48 \n    SmartThings  \n    Installation  \n Visit the Google Play Store, Galaxy Apps, or Apple App Store",
+    "top1_score": -0.6988927721977234,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
+    "method": "dot_product",
+    "elapsed_s": 1.629104372113943e-05,
+    "top1_text": "Operations\nEnglish48 \n    SmartThings  \n    Installation  \n Visit the Google Play Store, Galaxy Apps, or Apple App Store",
+    "top1_score": 0.6505529880523682,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
+    "method": "manhattan",
+    "elapsed_s": 0.0004552080063149333,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.301821549531724,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
+    "method": "bm25",
+    "elapsed_s": 0.00021425005979835987,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
+    "method": "hybrid",
+    "elapsed_s": 0.00020008301362395287,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028474711270410194,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고에서 소음이 날 때 원인과 해결 방법은?",
+    "method": "cosine",
+    "elapsed_s": 5.258398596197367e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6391323804855347,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고에서 소음이 날 때 원인과 해결 방법은?",
+    "method": "euclidean",
+    "elapsed_s": 2.337503246963024e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.7217354774475098,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고에서 소음이 날 때 원인과 해결 방법은?",
+    "method": "dot_product",
+    "elapsed_s": 2.1249987185001373e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6391326189041138,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고에서 소음이 날 때 원인과 해결 방법은?",
+    "method": "manhattan",
+    "elapsed_s": 0.00026404194068163633,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.629926580995743,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고에서 소음이 날 때 원인과 해결 방법은?",
+    "method": "bm25",
+    "elapsed_s": 0.00017224997282028198,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "냉장고에서 소음이 날 때 원인과 해결 방법은?",
+    "method": "hybrid",
+    "elapsed_s": 0.0001842080382630229,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028949545078577336,
+    "num_retrieved": 5
+  },
+  {
+    "query": "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
+    "method": "cosine",
+    "elapsed_s": 7.424992509186268e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.640353798866272,
+    "num_retrieved": 5
+  },
+  {
+    "query": "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
+    "method": "euclidean",
+    "elapsed_s": 2.65840208157897e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.7192928791046143,
+    "num_retrieved": 5
+  },
+  {
+    "query": "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
+    "method": "dot_product",
+    "elapsed_s": 1.950003206729889e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6403540372848511,
+    "num_retrieved": 5
+  },
+  {
+    "query": "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
+    "method": "manhattan",
+    "elapsed_s": 0.00042491708882153034,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.608608891474432,
+    "num_retrieved": 5
+  },
+  {
+    "query": "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
+    "method": "bm25",
+    "elapsed_s": 0.00021420803386718035,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
+    "method": "hybrid",
+    "elapsed_s": 0.00024279102217406034,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028949545078577336,
+    "num_retrieved": 5
+  },
+  {
+    "query": "울 소재 의류를 세탁하는 올바른 방법은?",
+    "method": "cosine",
+    "elapsed_s": 4.824995994567871e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6385406255722046,
+    "num_retrieved": 5
+  },
+  {
+    "query": "울 소재 의류를 세탁하는 올바른 방법은?",
+    "method": "euclidean",
+    "elapsed_s": 2.316699828952551e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.7229187488555908,
+    "num_retrieved": 5
+  },
+  {
+    "query": "울 소재 의류를 세탁하는 올바른 방법은?",
+    "method": "dot_product",
+    "elapsed_s": 1.89170241355896e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6385407447814941,
+    "num_retrieved": 5
+  },
+  {
+    "query": "울 소재 의류를 세탁하는 올바른 방법은?",
+    "method": "manhattan",
+    "elapsed_s": 0.000262040994130075,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.601599055564293,
+    "num_retrieved": 5
+  },
+  {
+    "query": "울 소재 의류를 세탁하는 올바른 방법은?",
+    "method": "bm25",
+    "elapsed_s": 0.00013745808973908424,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "울 소재 의류를 세탁하는 올바른 방법은?",
+    "method": "hybrid",
+    "elapsed_s": 0.00015487498603761196,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028949545078577336,
+    "num_retrieved": 5
+  },
+  {
+    "query": "세탁기 드럼 청소 주기와 방법을 알려주세요.",
+    "method": "cosine",
+    "elapsed_s": 5.949998740106821e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6510156989097595,
+    "num_retrieved": 5
+  },
+  {
+    "query": "세탁기 드럼 청소 주기와 방법을 알려주세요.",
+    "method": "euclidean",
+    "elapsed_s": 2.3042084649205208e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.6979687809944153,
+    "num_retrieved": 5
+  },
+  {
+    "query": "세탁기 드럼 청소 주기와 방법을 알려주세요.",
+    "method": "dot_product",
+    "elapsed_s": 1.550000160932541e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6510158181190491,
+    "num_retrieved": 5
+  },
+  {
+    "query": "세탁기 드럼 청소 주기와 방법을 알려주세요.",
+    "method": "manhattan",
+    "elapsed_s": 0.00039708404801785946,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.24178145316,
+    "num_retrieved": 5
+  },
+  {
+    "query": "세탁기 드럼 청소 주기와 방법을 알려주세요.",
+    "method": "bm25",
+    "elapsed_s": 0.00018970808014273643,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "세탁기 드럼 청소 주기와 방법을 알려주세요.",
+    "method": "hybrid",
+    "elapsed_s": 0.0001919999485835433,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.02832415420928403,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨 필터 청소는 어떻게 하나요?",
+    "method": "cosine",
+    "elapsed_s": 4.916603211313486e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6370753049850464,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨 필터 청소는 어떻게 하나요?",
+    "method": "euclidean",
+    "elapsed_s": 2.0125065930187702e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.7258496880531311,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨 필터 청소는 어떻게 하나요?",
+    "method": "dot_product",
+    "elapsed_s": 1.5874975360929966e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6370755434036255,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨 필터 청소는 어떻게 하나요?",
+    "method": "manhattan",
+    "elapsed_s": 0.0002547090407460928,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.588284882695916,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨 필터 청소는 어떻게 하나요?",
+    "method": "bm25",
+    "elapsed_s": 0.00014187488704919815,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨 필터 청소는 어떻게 하나요?",
+    "method": "hybrid",
+    "elapsed_s": 0.0001431250711902976,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028474711270410194,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨에서 물이 떨어질 때 원인과 해결책은?",
+    "method": "cosine",
+    "elapsed_s": 7.045792881399393e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6385406255722046,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨에서 물이 떨어질 때 원인과 해결책은?",
+    "method": "euclidean",
+    "elapsed_s": 3.5541015677154064e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.7229187488555908,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨에서 물이 떨어질 때 원인과 해결책은?",
+    "method": "dot_product",
+    "elapsed_s": 2.804200630635023e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6385407447814941,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨에서 물이 떨어질 때 원인과 해결책은?",
+    "method": "manhattan",
+    "elapsed_s": 0.00037645804695785046,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.601599055564293,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨에서 물이 떨어질 때 원인과 해결책은?",
+    "method": "bm25",
+    "elapsed_s": 0.0002330410061404109,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨에서 물이 떨어질 때 원인과 해결책은?",
+    "method": "hybrid",
+    "elapsed_s": 0.00026000000070780516,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028949545078577336,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨 절전 모드 사용 방법은?",
+    "method": "cosine",
+    "elapsed_s": 4.554097540676594e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6370753049850464,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨 절전 모드 사용 방법은?",
+    "method": "euclidean",
+    "elapsed_s": 1.9291997887194157e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.7258496880531311,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨 절전 모드 사용 방법은?",
+    "method": "dot_product",
+    "elapsed_s": 1.5459023416042328e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6370755434036255,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨 절전 모드 사용 방법은?",
+    "method": "manhattan",
+    "elapsed_s": 0.0002449579769745469,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.588284882695916,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨 절전 모드 사용 방법은?",
+    "method": "bm25",
+    "elapsed_s": 0.00011970801278948784,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "에어컨 절전 모드 사용 방법은?",
+    "method": "hybrid",
+    "elapsed_s": 0.00013874995056539774,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028474711270410194,
+    "num_retrieved": 5
+  },
+  {
+    "query": "전자레인지 오토 해동 기능 사용법은?",
+    "method": "cosine",
+    "elapsed_s": 6.375007797032595e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6370753049850464,
+    "num_retrieved": 5
+  },
+  {
+    "query": "전자레인지 오토 해동 기능 사용법은?",
+    "method": "euclidean",
+    "elapsed_s": 2.237502485513687e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.7258496880531311,
+    "num_retrieved": 5
+  },
+  {
+    "query": "전자레인지 오토 해동 기능 사용법은?",
+    "method": "dot_product",
+    "elapsed_s": 1.7249956727027893e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6370755434036255,
+    "num_retrieved": 5
+  },
+  {
+    "query": "전자레인지 오토 해동 기능 사용법은?",
+    "method": "manhattan",
+    "elapsed_s": 0.000382583006285131,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.588284882695916,
+    "num_retrieved": 5
+  },
+  {
+    "query": "전자레인지 오토 해동 기능 사용법은?",
+    "method": "bm25",
+    "elapsed_s": 0.00014491693582385778,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "전자레인지 오토 해동 기능 사용법은?",
+    "method": "hybrid",
+    "elapsed_s": 0.0001735000405460596,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028474711270410194,
+    "num_retrieved": 5
+  },
+  {
+    "query": "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
+    "method": "cosine",
+    "elapsed_s": 6.00829953327775e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6391323804855347,
+    "num_retrieved": 5
+  },
+  {
+    "query": "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
+    "method": "euclidean",
+    "elapsed_s": 2.0459061488509178e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.7217354774475098,
+    "num_retrieved": 5
+  },
+  {
+    "query": "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
+    "method": "dot_product",
+    "elapsed_s": 1.5416997484862804e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6391326189041138,
+    "num_retrieved": 5
+  },
+  {
+    "query": "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
+    "method": "manhattan",
+    "elapsed_s": 0.0019898329628631473,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.629926580995743,
+    "num_retrieved": 5
+  },
+  {
+    "query": "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
+    "method": "bm25",
+    "elapsed_s": 0.00018220895435661077,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
+    "method": "hybrid",
+    "elapsed_s": 0.00019983306992799044,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028949545078577336,
+    "num_retrieved": 5
+  },
+  {
+    "query": "식기세척기 세제 투입량은 얼마나 되나요?",
+    "method": "cosine",
+    "elapsed_s": 5.4458039812743664e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6370753049850464,
+    "num_retrieved": 5
+  },
+  {
+    "query": "식기세척기 세제 투입량은 얼마나 되나요?",
+    "method": "euclidean",
+    "elapsed_s": 2.4416949599981308e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.7258496880531311,
+    "num_retrieved": 5
+  },
+  {
+    "query": "식기세척기 세제 투입량은 얼마나 되나요?",
+    "method": "dot_product",
+    "elapsed_s": 1.529103610664606e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6370755434036255,
+    "num_retrieved": 5
+  },
+  {
+    "query": "식기세척기 세제 투입량은 얼마나 되나요?",
+    "method": "manhattan",
+    "elapsed_s": 0.00023970799520611763,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.588284882695916,
+    "num_retrieved": 5
+  },
+  {
+    "query": "식기세척기 세제 투입량은 얼마나 되나요?",
+    "method": "bm25",
+    "elapsed_s": 0.0001265000319108367,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "식기세척기 세제 투입량은 얼마나 되나요?",
+    "method": "hybrid",
+    "elapsed_s": 0.00014479097444564104,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028474711270410194,
+    "num_retrieved": 5
+  },
+  {
+    "query": "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
+    "method": "cosine",
+    "elapsed_s": 5.8458070270717144e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6391323804855347,
+    "num_retrieved": 5
+  },
+  {
+    "query": "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
+    "method": "euclidean",
+    "elapsed_s": 2.1958956494927406e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.7217354774475098,
+    "num_retrieved": 5
+  },
+  {
+    "query": "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
+    "method": "dot_product",
+    "elapsed_s": 1.6832957044243813e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6391326189041138,
+    "num_retrieved": 5
+  },
+  {
+    "query": "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
+    "method": "manhattan",
+    "elapsed_s": 0.000272250035777688,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.629926580995743,
+    "num_retrieved": 5
+  },
+  {
+    "query": "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
+    "method": "bm25",
+    "elapsed_s": 0.00016254198271781206,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
+    "method": "hybrid",
+    "elapsed_s": 0.000174041953869164,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028949545078577336,
+    "num_retrieved": 5
+  },
+  {
+    "query": "제품 보증 기간과 A/S 신청 방법은?",
+    "method": "cosine",
+    "elapsed_s": 5.041598342359066e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.5946987271308899,
+    "num_retrieved": 5
+  },
+  {
+    "query": "제품 보증 기간과 A/S 신청 방법은?",
+    "method": "euclidean",
+    "elapsed_s": 1.966708805412054e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.8106027841567993,
+    "num_retrieved": 5
+  },
+  {
+    "query": "제품 보증 기간과 A/S 신청 방법은?",
+    "method": "dot_product",
+    "elapsed_s": 1.4958088286221027e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.5946989059448242,
+    "num_retrieved": 5
+  },
+  {
+    "query": "제품 보증 기간과 A/S 신청 방법은?",
+    "method": "manhattan",
+    "elapsed_s": 0.00025870802346616983,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -19.775794439425226,
+    "num_retrieved": 5
+  },
+  {
+    "query": "제품 보증 기간과 A/S 신청 방법은?",
+    "method": "bm25",
+    "elapsed_s": 0.00014241703320294619,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "제품 보증 기간과 A/S 신청 방법은?",
+    "method": "hybrid",
+    "elapsed_s": 0.00015541701577603817,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028474711270410194,
+    "num_retrieved": 5
+  },
+  {
+    "query": "전원 코드 교체 시 주의사항은 무엇인가요?",
+    "method": "cosine",
+    "elapsed_s": 0.00011320796329528093,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6385406255722046,
+    "num_retrieved": 5
+  },
+  {
+    "query": "전원 코드 교체 시 주의사항은 무엇인가요?",
+    "method": "euclidean",
+    "elapsed_s": 5.550007335841656e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -0.7229187488555908,
+    "num_retrieved": 5
+  },
+  {
+    "query": "전원 코드 교체 시 주의사항은 무엇인가요?",
+    "method": "dot_product",
+    "elapsed_s": 4.254200030118227e-05,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": 0.6385407447814941,
+    "num_retrieved": 5
+  },
+  {
+    "query": "전원 코드 교체 시 주의사항은 무엇인가요?",
+    "method": "manhattan",
+    "elapsed_s": 0.0008998330449685454,
+    "top1_text": "the  Power Freeze  function.  \n•     Power Freeze  speeds up the freezing process at maximum fan \nspeed. The freezer kee",
+    "top1_score": -18.601599055564293,
+    "num_retrieved": 5
+  },
+  {
+    "query": "전원 코드 교체 시 주의사항은 무엇인가요?",
+    "method": "bm25",
+    "elapsed_s": 0.00042729207780212164,
+    "top1_text": "to open source license information as related to this product.   \n \nMemo\n COSTA RICA   00-800-1-726-7864  \n www.samsung.",
+    "top1_score": 0.0,
+    "num_retrieved": 5
+  },
+  {
+    "query": "전원 코드 교체 시 주의사항은 무엇인가요?",
+    "method": "hybrid",
+    "elapsed_s": 0.0003639589995145798,
+    "top1_text": "•    When closing the door, make sure the vertical hinged section is in the correct position \nto avoid scratching the ot",
+    "top1_score": 0.028949545078577336,
+    "num_retrieved": 5
+  }
+]
