@@ -159,10 +159,10 @@ class LlamaIndexRAG:
     def _generate_answer(self, question: str, context: str) -> tuple[str, float]:
         t0 = time.perf_counter()
         prompt = (
-            f"다음 문서 내용을 참고하여 질문에 답변해주세요.\n\n"
-            f"문서 내용:\n{context}\n\n"
-            f"질문: {question}\n\n"
-            f"답변:"
+            f"Please answer the question based on the following document content.\n\n"
+            f"Document content:\n{context}\n\n"
+            f"Question: {question}\n\n"
+            f"Answer:"
         )
         response = Settings.llm.complete(prompt)
         return str(response), time.perf_counter() - t0

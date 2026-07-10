@@ -2,8 +2,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "냉장고 냉동실 온도를 조절하는 방법은?",
-    "answer": "제공된 문서에는 냉장고의 일반적인 온도 조절 방법에 대한 직접적인 설명은 나와 있지 않습니다. 다만, 온도 및 냉동 기능과 관련하여 다음과 같은 기능들이 언급되어 있습니다.\n\n* **Power Freeze 기능**: 냉동 과정을 빠르게 하기 위해 팬 속도를 최대로 높이는 기능입니다. 이 기능은 50시간 동안 최대 속도로 작동한 후 다시 이전 온도로 돌아갑니다.\n* **FlexZone 모드**: FlexZone 모드를 'Freeze'로 설정하면 해당 구역의 온도가 냉동실과 동일하게 설정됩니다.",
+    "question": "How do I adjust the freezer temperature on the refrigerator?",
+    "answer": "The provided document does not directly explain how to adjust the refrigerator temperature in general. However, the following temperature- and freezing-related features are mentioned.\n\n* **Power Freeze feature**: Raises fan speed to maximum to speed up freezing. It runs at max speed for 50 hours, then returns to the previous temperature.\n* **FlexZone mode**: Setting FlexZone to 'Freeze' makes that zone the same temperature as the freezer.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -41,8 +41,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
-    "answer": "제공된 문서 내용에는 냉장고 성에가 맺혔을 때의 **제상 방법에 대한 정보가 포함되어 있지 않습니다.**\n\n문서에는 SmartThings 앱 설치 방법, Power Freeze 기능, FlexZone 설정, Welcome Lighting 센서 관리, 소프트 버튼 기능, 그리고 SmartThings 앱 관련 문제 해결 방법만 안내되어 있습니다.",
+    "question": "How do I defrost the refrigerator when frost has built up?",
+    "answer": "The provided document does **not include information on how to defrost** the refrigerator when frost has built up.\n\nThe document only covers SmartThings app installation, the Power Freeze feature, FlexZone settings, Welcome Lighting sensor management, soft-button features, and SmartThings troubleshooting.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -80,8 +80,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "냉장고에서 소음이 날 때 원인과 해결 방법은?",
-    "answer": "제공된 문서 내용에 따르면, **\"whooshing sounds may occur(쉭쉭거리는 소리가 발생할 수 있음)\"**라는 언급은 있으나, 소음이 발생하는 구체적인 **원인**이나 이를 해결하기 위한 **방법**에 대한 정보는 명시되어 있지 않습니다.",
+    "question": "What causes noise from the refrigerator and how can I fix it?",
+    "answer": "According to the provided document, it mentions that **\"whooshing sounds may occur\"**, but it does not specify the concrete **cause** of the noise or a **method** to resolve it.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -119,8 +119,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
-    "answer": "제공된 문서에는 **세탁기 탈수가 안 될 때의 해결 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, Beverage mode, AutoFill Pitcher, Welcome Lighting) 및 SmartThings 앱 설치와 관련된 내용을 다루고 있습니다.",
+    "question": "What should I do when the washing machine will not spin-dry?",
+    "answer": "The provided document does **not include guidance on what to do when the washing machine will not spin-dry.**\n\nThe document covers refrigerator features (Power Freeze, FlexZone, Beverage mode, AutoFill Pitcher, Welcome Lighting) and SmartThings app installation.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -158,8 +158,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "울 소재 의류를 세탁하는 올바른 방법은?",
-    "answer": "제공된 문서에는 울 소재 의류를 세탁하는 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 기능(Power Freeze, FlexZone, AutoFill Pitcher 등)과 SmartThings 앱 사용법에 관한 내용을 담고 있습니다.",
+    "question": "What is the correct way to wash wool clothing?",
+    "answer": "The provided document does not include information on how to wash wool clothing. The document covers refrigerator features (Power Freeze, FlexZone, AutoFill Pitcher, etc.) and how to use the SmartThings app.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -197,8 +197,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "세탁기 드럼 청소 주기와 방법을 알려주세요.",
-    "answer": "제공된 문서에는 **세탁기 드럼 청소 주기와 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 **Power Freeze 기능, FlexZone 모드, SmartThings 앱 설치 및 사용법, Welcome Lighting 센서 관리** 등에 관한 내용을 담고 있습니다.",
+    "question": "How often and how should I clean the washing machine drum?",
+    "answer": "The provided document does **not include information on washing-machine drum cleaning frequency or methods.**\n\nThe document covers the refrigerator's **Power Freeze feature, FlexZone mode, SmartThings app install/usage, and Welcome Lighting sensor management**, among other topics.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -236,8 +236,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "에어컨 필터 청소는 어떻게 하나요?",
-    "answer": "제공된 문서에는 에어컨 필터 청소 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 Power Freeze, FlexZone, SmartThings 앱 설치, AutoFill Pitcher, Welcome Lighting 기능 등에 관한 내용을 다루고 있습니다.",
+    "question": "How do I clean the air conditioner filter?",
+    "answer": "The provided document does not include information on how to clean the air conditioner filter. The document covers refrigerator Power Freeze, FlexZone, SmartThings app installation, AutoFill Pitcher, Welcome Lighting, and related features.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -275,8 +275,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "에어컨에서 물이 떨어질 때 원인과 해결책은?",
-    "answer": "제공된 문서에는 **에어컨에서 물이 떨어질 때의 원인과 해결책에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, AutoFill Pitcher, Welcome Lighting 등)과 SmartThings 앱 설치 및 트러블슈팅에 관한 내용을 다루고 있습니다.",
+    "question": "What causes water to drip from the air conditioner and how do I fix it?",
+    "answer": "The provided document does **not include information on causes or fixes for water dripping from the air conditioner.**\n\nThe document covers refrigerator features (Power Freeze, FlexZone, AutoFill Pitcher, Welcome Lighting, etc.) and SmartThings app installation/troubleshooting.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -314,8 +314,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "에어컨 절전 모드 사용 방법은?",
-    "answer": "제공된 문서에는 **에어컨 절전 모드 사용 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, AutoFill Pitcher, Welcome Lighting 등)과 SmartThings 앱 설치 및 문제 해결에 관한 내용을 다루고 있습니다.",
+    "question": "How do I use the air conditioner energy-saving mode?",
+    "answer": "The provided document does **not include information on how to use the air conditioner energy-saving mode.**\n\nThe document covers refrigerator features (Power Freeze, FlexZone, AutoFill Pitcher, Welcome Lighting, etc.) and SmartThings app installation and troubleshooting.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -353,8 +353,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "전자레인지 오토 해동 기능 사용법은?",
-    "answer": "제공된 문서에는 **전자레인지의 오토 해동 기능에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 'Power Freeze', 'FlexZone', 'SmartThings' 앱 설치, 'AutoFill Pitcher', 'Welcome Lighting' 기능 등에 관한 내용을 다루고 있습니다.",
+    "question": "How do I use the microwave auto-defrost function?",
+    "answer": "The provided document does **not include information on the microwave auto-defrost function.**\n\nThe document covers refrigerator 'Power Freeze', 'FlexZone', SmartThings app installation, 'AutoFill Pitcher', 'Welcome Lighting', and related features.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -392,8 +392,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
-    "answer": "제공된 문서에는 오븐에서 베이킹할 때의 적정 온도 설정 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 'Power Freeze', 'FlexZone', 'SmartThings' 앱 설치, 'Beverage mode', 'AutoFill Pitcher', 'Welcome Lighting' 기능에 관한 내용을 다루고 있습니다.",
+    "question": "What is the proper temperature setting when baking in the oven?",
+    "answer": "The provided document does not include information on proper oven temperature settings for baking. The document covers refrigerator 'Power Freeze', 'FlexZone', SmartThings app installation, 'Beverage mode', 'AutoFill Pitcher', and 'Welcome Lighting'.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -431,8 +431,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "식기세척기 세제 투입량은 얼마나 되나요?",
-    "answer": "제공된 문서 내용에는 식기세척기 세제 투입량에 관한 정보가 포함되어 있지 않습니다. 해당 문서는 냉장고의 Power Freeze, FlexZone, SmartThings 앱 설치, AutoFill Pitcher, Welcome Lighting 기능에 관한 내용을 다루고 있습니다.",
+    "question": "How much detergent should I use in the dishwasher?",
+    "answer": "The provided document does not include information on dishwasher detergent amounts. The document covers refrigerator Power Freeze, FlexZone, SmartThings app installation, AutoFill Pitcher, and Welcome Lighting.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -470,8 +470,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
-    "answer": "제공된 문서에는 **식기세척기의 세척 성능(식기가 깨끗하게 세척되지 않을 때의 확인사항)에 관한 내용은 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, Beverage mode, AutoFill Pitcher, Welcome Lighting) 및 SmartThings 앱 설치와 관련된 내용을 다루고 있습니다.",
+    "question": "What should I check when dishes are not cleaned properly in the dishwasher?",
+    "answer": "The provided document does **not include information on dishwasher cleaning performance (what to check when dishes are not cleaned properly).**\n\nThe document covers refrigerator features (Power Freeze, FlexZone, Beverage mode, AutoFill Pitcher, Welcome Lighting) and SmartThings app installation.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -509,8 +509,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "제품 보증 기간과 A/S 신청 방법은?",
-    "answer": "제공된 문서 내용에는 제품의 **보증 기간과 A/S 신청 방법에 대한 정보가 포함되어 있지 않습니다.**\n\n문서에는 Power Freeze 기능, FlexZone 및 Beverage Zone 설정, Wi-Fi 연결 관련 주의사항, 냉장고에서 발생할 수 있는 소음, SmartThings 앱 설치 방법 등에 대한 내용만 나와 있습니다.",
+    "question": "What is the product warranty period and how do I request service?",
+    "answer": "The provided document does **not include information on the product warranty period or how to request service.**\n\nThe document only covers the Power Freeze feature, FlexZone and Beverage Zone settings, Wi-Fi connection precautions, possible refrigerator noises, and SmartThings app installation.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -548,8 +548,8 @@
   {
     "framework": "langgraph",
     "method": "cosine",
-    "question": "전원 코드 교체 시 주의사항은 무엇인가요?",
-    "answer": "제공된 문서 내용에는 **전원 코드 교체 시 주의사항에 대한 내용이 포함되어 있지 않습니다.**",
+    "question": "What precautions should I take when replacing the power cord?",
+    "answer": "The provided document does **not include precautions for replacing the power cord.**",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -587,8 +587,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "냉장고 냉동실 온도를 조절하는 방법은?",
-    "answer": "제공된 문서에는 냉장고의 온도를 조절하는 구체적인 조작 방법(예: 버튼 조작 등)에 대한 직접적인 설명은 나와 있지 않습니다. 다만, 온도와 관련된 다음과 같은 기능들을 확인할 수 있습니다.\n\n* **Power Freeze 기능**: 냉동 과정을 빠르게 하기 위해 최대 팬 속도로 작동하는 기능입니다. 이 기능은 50시간 동안 유지된 후 다시 이전 온도로 돌아갑니다.\n* **FlexZone 모드**: FlexZone 모드를 'Freeze'로 설정하면 해당 구역의 온도가 냉동실과 동일한 온도로 설정됩니다.",
+    "question": "How do I adjust the freezer temperature on the refrigerator?",
+    "answer": "The provided document does not directly explain specific controls for adjusting refrigerator temperature (e.g., button operations). However, the following temperature-related features are available.\n\n* **Power Freeze feature**: Runs at maximum fan speed to speed up freezing. It stays on for 50 hours, then returns to the previous temperature.\n* **FlexZone mode**: Setting FlexZone to 'Freeze' sets that zone to the same temperature as the freezer.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -626,8 +626,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
-    "answer": "제공된 문서 내용에는 냉장고 성에가 맺혔을 때의 **제상 방법에 대한 정보가 포함되어 있지 않습니다.**\n\n문서에는 SmartThings 앱 설치 방법, Power Freeze 기능, FlexZone 설정, Welcome Lighting 센서 관리, 소프트 버튼 기능, 그리고 SmartThings 앱 관련 문제 해결 방법만 안내되어 있습니다.",
+    "question": "How do I defrost the refrigerator when frost has built up?",
+    "answer": "The provided document does **not include information on how to defrost** the refrigerator when frost has built up.\n\nThe document only covers SmartThings app installation, the Power Freeze feature, FlexZone settings, Welcome Lighting sensor management, soft-button features, and SmartThings troubleshooting.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -665,8 +665,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "냉장고에서 소음이 날 때 원인과 해결 방법은?",
-    "answer": "제공된 문서 내용에 따르면, **\"whooshing sounds may occur(쉭쉭거리는 소리가 발생할 수 있음)\"**라는 언급은 있으나, 소음이 발생하는 구체적인 **원인**이나 이를 해결하기 위한 **방법**에 대한 정보는 명시되어 있지 않습니다.",
+    "question": "What causes noise from the refrigerator and how can I fix it?",
+    "answer": "According to the provided document, it mentions that **\"whooshing sounds may occur\"**, but it does not specify the concrete **cause** of the noise or a **method** to resolve it.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -704,8 +704,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
-    "answer": "제공된 문서에는 **세탁기 탈수가 안 될 때의 해결 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, Beverage mode, AutoFill Pitcher, Welcome Lighting) 및 SmartThings 앱 설치와 관련된 내용을 다루고 있습니다.",
+    "question": "What should I do when the washing machine will not spin-dry?",
+    "answer": "The provided document does **not include guidance on what to do when the washing machine will not spin-dry.**\n\nThe document covers refrigerator features (Power Freeze, FlexZone, Beverage mode, AutoFill Pitcher, Welcome Lighting) and SmartThings app installation.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -743,8 +743,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "울 소재 의류를 세탁하는 올바른 방법은?",
-    "answer": "제공된 문서에는 울 소재 의류를 세탁하는 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 기능(Power Freeze, FlexZone, AutoFill Pitcher 등)과 SmartThings 앱 사용법에 관한 내용을 담고 있습니다.",
+    "question": "What is the correct way to wash wool clothing?",
+    "answer": "The provided document does not include information on how to wash wool clothing. The document covers refrigerator features (Power Freeze, FlexZone, AutoFill Pitcher, etc.) and how to use the SmartThings app.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -782,8 +782,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "세탁기 드럼 청소 주기와 방법을 알려주세요.",
-    "answer": "제공된 문서에는 **세탁기 드럼 청소 주기와 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 **Power Freeze 기능, FlexZone 모드, SmartThings 앱 설치 및 사용법, Welcome Lighting 센서 관리** 등에 관한 내용을 담고 있습니다.",
+    "question": "How often and how should I clean the washing machine drum?",
+    "answer": "The provided document does **not include information on washing-machine drum cleaning frequency or methods.**\n\nThe document covers the refrigerator's **Power Freeze feature, FlexZone mode, SmartThings app install/usage, and Welcome Lighting sensor management**, among other topics.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -821,8 +821,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "에어컨 필터 청소는 어떻게 하나요?",
-    "answer": "제공된 문서에는 에어컨 필터 청소 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 Power Freeze, FlexZone, SmartThings 앱 설치, AutoFill Pitcher, Welcome Lighting 기능 등에 관한 내용을 다루고 있습니다.",
+    "question": "How do I clean the air conditioner filter?",
+    "answer": "The provided document does not include information on how to clean the air conditioner filter. The document covers refrigerator Power Freeze, FlexZone, SmartThings app installation, AutoFill Pitcher, Welcome Lighting, and related features.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -860,8 +860,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "에어컨에서 물이 떨어질 때 원인과 해결책은?",
-    "answer": "제공된 문서에는 **에어컨에서 물이 떨어질 때의 원인과 해결책에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, AutoFill Pitcher, Welcome Lighting 등)과 SmartThings 앱 설치 및 트러블슈팅에 관한 내용을 다루고 있습니다.",
+    "question": "What causes water to drip from the air conditioner and how do I fix it?",
+    "answer": "The provided document does **not include information on causes or fixes for water dripping from the air conditioner.**\n\nThe document covers refrigerator features (Power Freeze, FlexZone, AutoFill Pitcher, Welcome Lighting, etc.) and SmartThings app installation/troubleshooting.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -899,8 +899,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "에어컨 절전 모드 사용 방법은?",
-    "answer": "제공된 문서에는 **에어컨 절전 모드 사용 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, AutoFill Pitcher, Welcome Lighting 등)과 SmartThings 앱 설치 및 문제 해결에 관한 내용을 다루고 있습니다.",
+    "question": "How do I use the air conditioner energy-saving mode?",
+    "answer": "The provided document does **not include information on how to use the air conditioner energy-saving mode.**\n\nThe document covers refrigerator features (Power Freeze, FlexZone, AutoFill Pitcher, Welcome Lighting, etc.) and SmartThings app installation and troubleshooting.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -938,8 +938,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "전자레인지 오토 해동 기능 사용법은?",
-    "answer": "제공된 문서에는 **전자레인지의 오토 해동 기능에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 'Power Freeze', 'FlexZone', 'SmartThings' 앱 설치, 'AutoFill Pitcher', 'Welcome Lighting' 기능 등에 관한 내용을 다루고 있습니다.",
+    "question": "How do I use the microwave auto-defrost function?",
+    "answer": "The provided document does **not include information on the microwave auto-defrost function.**\n\nThe document covers refrigerator 'Power Freeze', 'FlexZone', SmartThings app installation, 'AutoFill Pitcher', 'Welcome Lighting', and related features.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -977,8 +977,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
-    "answer": "제공된 문서에는 오븐에서 베이킹할 때의 적정 온도 설정 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 'Power Freeze', 'FlexZone', 'SmartThings' 앱 설치, 'Beverage mode', 'AutoFill Pitcher', 'Welcome Lighting' 기능에 관한 내용을 다루고 있습니다.",
+    "question": "What is the proper temperature setting when baking in the oven?",
+    "answer": "The provided document does not include information on proper oven temperature settings for baking. The document covers refrigerator 'Power Freeze', 'FlexZone', SmartThings app installation, 'Beverage mode', 'AutoFill Pitcher', and 'Welcome Lighting'.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1016,8 +1016,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "식기세척기 세제 투입량은 얼마나 되나요?",
-    "answer": "제공된 문서 내용에는 식기세척기 세제 투입량에 관한 정보가 포함되어 있지 않습니다. 해당 문서는 냉장고의 Power Freeze, FlexZone, SmartThings 앱 설치, AutoFill Pitcher, Welcome Lighting 기능에 관한 내용을 다루고 있습니다.",
+    "question": "How much detergent should I use in the dishwasher?",
+    "answer": "The provided document does not include information on dishwasher detergent amounts. The document covers refrigerator Power Freeze, FlexZone, SmartThings app installation, AutoFill Pitcher, and Welcome Lighting.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1055,8 +1055,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
-    "answer": "제공된 문서에는 **식기세척기의 세척 성능(식기가 깨끗하게 세척되지 않을 때의 확인사항)에 관한 내용은 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, Beverage mode, AutoFill Pitcher, Welcome Lighting) 및 SmartThings 앱 설치와 관련된 내용을 다루고 있습니다.",
+    "question": "What should I check when dishes are not cleaned properly in the dishwasher?",
+    "answer": "The provided document does **not include information on dishwasher cleaning performance (what to check when dishes are not cleaned properly).**\n\nThe document covers refrigerator features (Power Freeze, FlexZone, Beverage mode, AutoFill Pitcher, Welcome Lighting) and SmartThings app installation.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1094,8 +1094,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "제품 보증 기간과 A/S 신청 방법은?",
-    "answer": "제공된 문서 내용에는 제품의 **보증 기간과 A/S 신청 방법에 대한 정보가 포함되어 있지 않습니다.**\n\n문서에는 Power Freeze 기능, FlexZone 및 Beverage Zone 설정, Wi-Fi 연결 관련 주의사항, 냉장고에서 발생할 수 있는 소음, SmartThings 앱 설치 방법 등에 대한 내용만 나와 있습니다.",
+    "question": "What is the product warranty period and how do I request service?",
+    "answer": "The provided document does **not include information on the product warranty period or how to request service.**\n\nThe document only covers the Power Freeze feature, FlexZone and Beverage Zone settings, Wi-Fi connection precautions, possible refrigerator noises, and SmartThings app installation.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1133,8 +1133,8 @@
   {
     "framework": "langgraph",
     "method": "euclidean",
-    "question": "전원 코드 교체 시 주의사항은 무엇인가요?",
-    "answer": "제공된 문서 내용에는 **전원 코드 교체 시 주의사항에 대한 내용이 포함되어 있지 않습니다.**",
+    "question": "What precautions should I take when replacing the power cord?",
+    "answer": "The provided document does **not include precautions for replacing the power cord.**",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1172,8 +1172,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "냉장고 냉동실 온도를 조절하는 방법은?",
-    "answer": "제공된 문서에는 냉장고의 온도를 조절하는 구체적인 조작 방법(예: 버튼 조작 등)에 대한 직접적인 설명은 나와 있지 않습니다. 다만, 온도와 관련된 다음과 같은 기능들을 확인할 수 있습니다.\n\n* **Power Freeze 기능**: 냉동 과정을 빠르게 하기 위해 최대 팬 속도로 작동하는 기능입니다. 이 기능은 50시간 동안 유지된 후 다시 이전 온도로 돌아갑니다.\n* **FlexZone 모드**: FlexZone 모드를 'Freeze'로 설정하면 해당 구역의 온도가 냉동실과 동일한 온도로 설정됩니다.",
+    "question": "How do I adjust the freezer temperature on the refrigerator?",
+    "answer": "The provided document does not directly explain specific controls for adjusting refrigerator temperature (e.g., button operations). However, the following temperature-related features are available.\n\n* **Power Freeze feature**: Runs at maximum fan speed to speed up freezing. It stays on for 50 hours, then returns to the previous temperature.\n* **FlexZone mode**: Setting FlexZone to 'Freeze' sets that zone to the same temperature as the freezer.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1211,8 +1211,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
-    "answer": "제공된 문서 내용에는 냉장고 성에가 맺혔을 때의 **제상 방법에 대한 정보가 포함되어 있지 않습니다.**\n\n문서에는 SmartThings 앱 설치 방법, Power Freeze 기능, FlexZone 설정, Welcome Lighting 센서 관리, 소프트 버튼 기능, 그리고 SmartThings 앱 관련 문제 해결 방법만 안내되어 있습니다.",
+    "question": "How do I defrost the refrigerator when frost has built up?",
+    "answer": "The provided document does **not include information on how to defrost** the refrigerator when frost has built up.\n\nThe document only covers SmartThings app installation, the Power Freeze feature, FlexZone settings, Welcome Lighting sensor management, soft-button features, and SmartThings troubleshooting.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1250,8 +1250,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "냉장고에서 소음이 날 때 원인과 해결 방법은?",
-    "answer": "제공된 문서 내용에 따르면, **\"whooshing sounds may occur(쉭쉭거리는 소리가 발생할 수 있음)\"**라는 언급은 있으나, 소음이 발생하는 구체적인 **원인**이나 이를 해결하기 위한 **방법**에 대한 정보는 명시되어 있지 않습니다.",
+    "question": "What causes noise from the refrigerator and how can I fix it?",
+    "answer": "According to the provided document, it mentions that **\"whooshing sounds may occur\"**, but it does not specify the concrete **cause** of the noise or a **method** to resolve it.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1289,8 +1289,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
-    "answer": "제공된 문서에는 **세탁기 탈수가 안 될 때의 해결 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, Beverage mode, AutoFill Pitcher, Welcome Lighting) 및 SmartThings 앱 설치와 관련된 내용을 다루고 있습니다.",
+    "question": "What should I do when the washing machine will not spin-dry?",
+    "answer": "The provided document does **not include guidance on what to do when the washing machine will not spin-dry.**\n\nThe document covers refrigerator features (Power Freeze, FlexZone, Beverage mode, AutoFill Pitcher, Welcome Lighting) and SmartThings app installation.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1328,8 +1328,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "울 소재 의류를 세탁하는 올바른 방법은?",
-    "answer": "제공된 문서에는 울 소재 의류를 세탁하는 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 기능(Power Freeze, FlexZone, AutoFill Pitcher 등)과 SmartThings 앱 사용법에 관한 내용을 담고 있습니다.",
+    "question": "What is the correct way to wash wool clothing?",
+    "answer": "The provided document does not include information on how to wash wool clothing. The document covers refrigerator features (Power Freeze, FlexZone, AutoFill Pitcher, etc.) and how to use the SmartThings app.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1367,8 +1367,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "세탁기 드럼 청소 주기와 방법을 알려주세요.",
-    "answer": "제공된 문서에는 **세탁기 드럼 청소 주기와 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 **Power Freeze 기능, FlexZone 모드, SmartThings 앱 설치 및 사용법, Welcome Lighting 센서 관리** 등에 관한 내용을 담고 있습니다.",
+    "question": "How often and how should I clean the washing machine drum?",
+    "answer": "The provided document does **not include information on washing-machine drum cleaning frequency or methods.**\n\nThe document covers the refrigerator's **Power Freeze feature, FlexZone mode, SmartThings app install/usage, and Welcome Lighting sensor management**, among other topics.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1406,8 +1406,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "에어컨 필터 청소는 어떻게 하나요?",
-    "answer": "제공된 문서에는 에어컨 필터 청소 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 Power Freeze, FlexZone, SmartThings 앱 설치, AutoFill Pitcher, Welcome Lighting 기능 등에 관한 내용을 다루고 있습니다.",
+    "question": "How do I clean the air conditioner filter?",
+    "answer": "The provided document does not include information on how to clean the air conditioner filter. The document covers refrigerator Power Freeze, FlexZone, SmartThings app installation, AutoFill Pitcher, Welcome Lighting, and related features.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1445,8 +1445,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "에어컨에서 물이 떨어질 때 원인과 해결책은?",
-    "answer": "제공된 문서에는 **에어컨에서 물이 떨어질 때의 원인과 해결책에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, AutoFill Pitcher, Welcome Lighting 등)과 SmartThings 앱 설치 및 트러블슈팅에 관한 내용을 다루고 있습니다.",
+    "question": "What causes water to drip from the air conditioner and how do I fix it?",
+    "answer": "The provided document does **not include information on causes or fixes for water dripping from the air conditioner.**\n\nThe document covers refrigerator features (Power Freeze, FlexZone, AutoFill Pitcher, Welcome Lighting, etc.) and SmartThings app installation/troubleshooting.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1484,8 +1484,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "에어컨 절전 모드 사용 방법은?",
-    "answer": "제공된 문서에는 **에어컨 절전 모드 사용 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, AutoFill Pitcher, Welcome Lighting 등)과 SmartThings 앱 설치 및 문제 해결에 관한 내용을 다루고 있습니다.",
+    "question": "How do I use the air conditioner energy-saving mode?",
+    "answer": "The provided document does **not include information on how to use the air conditioner energy-saving mode.**\n\nThe document covers refrigerator features (Power Freeze, FlexZone, AutoFill Pitcher, Welcome Lighting, etc.) and SmartThings app installation and troubleshooting.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1523,8 +1523,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "전자레인지 오토 해동 기능 사용법은?",
-    "answer": "제공된 문서에는 **전자레인지의 오토 해동 기능에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 'Power Freeze', 'FlexZone', 'SmartThings' 앱 설치, 'AutoFill Pitcher', 'Welcome Lighting' 기능 등에 관한 내용을 다루고 있습니다.",
+    "question": "How do I use the microwave auto-defrost function?",
+    "answer": "The provided document does **not include information on the microwave auto-defrost function.**\n\nThe document covers refrigerator 'Power Freeze', 'FlexZone', SmartThings app installation, 'AutoFill Pitcher', 'Welcome Lighting', and related features.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1562,8 +1562,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
-    "answer": "제공된 문서에는 오븐에서 베이킹할 때의 적정 온도 설정 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 'Power Freeze', 'FlexZone', 'SmartThings' 앱 설치, 'Beverage mode', 'AutoFill Pitcher', 'Welcome Lighting' 기능에 관한 내용을 다루고 있습니다.",
+    "question": "What is the proper temperature setting when baking in the oven?",
+    "answer": "The provided document does not include information on proper oven temperature settings for baking. The document covers refrigerator 'Power Freeze', 'FlexZone', SmartThings app installation, 'Beverage mode', 'AutoFill Pitcher', and 'Welcome Lighting'.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1601,8 +1601,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "식기세척기 세제 투입량은 얼마나 되나요?",
-    "answer": "제공된 문서 내용에는 식기세척기 세제 투입량에 관한 정보가 포함되어 있지 않습니다. 해당 문서는 냉장고의 Power Freeze, FlexZone, SmartThings 앱 설치, AutoFill Pitcher, Welcome Lighting 기능에 관한 내용을 다루고 있습니다.",
+    "question": "How much detergent should I use in the dishwasher?",
+    "answer": "The provided document does not include information on dishwasher detergent amounts. The document covers refrigerator Power Freeze, FlexZone, SmartThings app installation, AutoFill Pitcher, and Welcome Lighting.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1640,8 +1640,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
-    "answer": "제공된 문서에는 **식기세척기의 세척 성능(식기가 깨끗하게 세척되지 않을 때의 확인사항)에 관한 내용은 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, Beverage mode, AutoFill Pitcher, Welcome Lighting) 및 SmartThings 앱 설치와 관련된 내용을 다루고 있습니다.",
+    "question": "What should I check when dishes are not cleaned properly in the dishwasher?",
+    "answer": "The provided document does **not include information on dishwasher cleaning performance (what to check when dishes are not cleaned properly).**\n\nThe document covers refrigerator features (Power Freeze, FlexZone, Beverage mode, AutoFill Pitcher, Welcome Lighting) and SmartThings app installation.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1679,8 +1679,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "제품 보증 기간과 A/S 신청 방법은?",
-    "answer": "제공된 문서 내용에는 제품의 **보증 기간과 A/S 신청 방법에 대한 정보가 포함되어 있지 않습니다.**\n\n문서에는 Power Freeze 기능, FlexZone 및 Beverage Zone 설정, Wi-Fi 연결 관련 주의사항, 냉장고에서 발생할 수 있는 소음, SmartThings 앱 설치 방법 등에 대한 내용만 나와 있습니다.",
+    "question": "What is the product warranty period and how do I request service?",
+    "answer": "The provided document does **not include information on the product warranty period or how to request service.**\n\nThe document only covers the Power Freeze feature, FlexZone and Beverage Zone settings, Wi-Fi connection precautions, possible refrigerator noises, and SmartThings app installation.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1718,8 +1718,8 @@
   {
     "framework": "langgraph",
     "method": "dot_product",
-    "question": "전원 코드 교체 시 주의사항은 무엇인가요?",
-    "answer": "제공된 문서 내용에는 **전원 코드 교체 시 주의사항에 대한 내용이 포함되어 있지 않습니다.**",
+    "question": "What precautions should I take when replacing the power cord?",
+    "answer": "The provided document does **not include precautions for replacing the power cord.**",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1757,8 +1757,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "냉장고 냉동실 온도를 조절하는 방법은?",
-    "answer": "제공된 문서에는 냉장고의 일반적인 냉동실 온도를 조절하는 구체적인 방법(예: 조작부 버튼 조작 등)에 대한 설명은 나와 있지 않습니다. 다만, 온도 및 냉동 기능과 관련하여 다음과 같은 기능들을 확인할 수 있습니다.\n\n* **Power Freeze 기능 활용**: 냉동 과정을 빠르게 하고 싶을 때 사용하며, 팬 속도를 최대로 높여 50시간 동안 작동한 후 이전 온도로 돌아갑니다.\n* **FlexZone 모드 설정**: FlexZone을 'Freeze' 모드로 설정하면 냉동실과 동일한 온도로 설정할 수 있습니다.\n* **SmartThings 앱 활용**: 삼성전자의 SmartThings 앱을 스마트 기기에 설치하여 기능을 관리할 수 있습니다.",
+    "question": "How do I adjust the freezer temperature on the refrigerator?",
+    "answer": "The provided document refrigerator freezer adjusting the temperature (: button operations ) . However, feature the following feature can be found.\n\n* **Power Freeze feature **: , 50 .\n* **FlexZone **: FlexZone 'Freeze' freezer .\n* **SmartThings **: SmartThings feature .",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1821,8 +1821,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
-    "answer": "제공된 문서 내용에는 **냉장고 성에가 맺혔을 때의 제상 방법에 대한 정보가 포함되어 있지 않습니다.**\n\n문서에는 Power Freeze 기능, FlexZone 설정, SmartThings 앱 설치, Welcome Lighting 센서 관리, 소프트 버튼 기능, 그리고 제빙기(Ice Maker) 관련 문제 해결 방법(물 공급 미연결, 온도 설정 등)에 대한 내용만 나와 있습니다.",
+    "question": "How do I defrost the refrigerator when frost has built up?",
+    "answer": "The provided document **refrigerator when frost has built up defrost method regarding this is not included.**\n\nThe document Power Freeze feature, FlexZone , SmartThings app installation, Welcome Lighting sensor management, soft button feature, (Ice Maker) solution( , ) only content about are present.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1885,8 +1885,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "냉장고에서 소음이 날 때 원인과 해결 방법은?",
-    "answer": "제시된 문서에 따르면, 냉장고에서 발생하는 소음의 원인과 내용은 다음과 같습니다.\n\n**1. 클릭(Clicking), 짹짹(Chirping), 웅(Buzzing) 소리**\n* **원인:** 팬(fan)이 작동할 때 발생할 수 있습니다.\n* **해결/참고:** 냉장고가 설정 온도에 도달하면 팬 소음은 더 이상 발생하지 않습니다.\n\n**2. 치익(SSSRRR! Whir!) 소리**\n* **원인:** 제상(defrost) 주기 동안 물이 제상 히터에 떨어지면서 발생하는 소리(sizzling sounds)입니다.\n\n**3. 쉿(HiSS!) 또는 보글보글(Bubbling!) 소리**\n* **원인:** 냉장고가 냉각되거나 냉동될 때, 밀폐된 파이프를 통해 냉매 가스가 이동하면서 발생하는 소리입니다.",
+    "question": "What causes noise from the refrigerator and how can I fix it?",
+    "answer": ", refrigerator noise cause .\n\n**1. (Clicking), (Chirping), (Buzzing) **\n* **cause:** (fan) .\n* **/:** refrigerator noise .\n\n**2. (SSSRRR! Whir!) **\n* **cause:** (defrost) (sizzling sounds).\n\n**3. (HiSS!) (Bubbling!) **\n* **cause:** refrigerator , .",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -1949,8 +1949,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
-    "answer": "제공된 문서에는 **세탁기 탈수가 안 될 때의 해결 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, AutoFill Pitcher), 냉장고 작동 시 발생하는 소음, 그리고 SmartThings 앱 설치 및 관련 문제 해결에 관한 내용을 다루고 있습니다.",
+    "question": "What should I do when the washing machine will not spin-dry?",
+    "answer": "The provided document does **not include guidance on what to do when the washing machine will not spin-dry.**\n\nThe document refrigerator feature(Power Freeze, FlexZone, AutoFill Pitcher), refrigerator noise, SmartThings app installation troubleshooting are covered.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2013,8 +2013,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "울 소재 의류를 세탁하는 올바른 방법은?",
-    "answer": "제공된 문서에는 울 소재 의류를 세탁하는 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 기능(Power Freeze, FlexZone, AutoFill Pitcher 등), SmartThings 앱 설치 및 문제 해결, 그리고 냉장고 작동 시 발생하는 소음에 관한 내용을 다루고 있습니다.",
+    "question": "What is the correct way to wash wool clothing?",
+    "answer": "The provided document does not include information on how to wash wool clothing. The document refrigerator feature(Power Freeze, FlexZone, AutoFill Pitcher ), SmartThings app installation troubleshooting, refrigerator noise are covered.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2077,8 +2077,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "세탁기 드럼 청소 주기와 방법을 알려주세요.",
-    "answer": "제공된 문서에는 **세탁기 드럼 청소 주기와 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 **Power Freeze 기능, FlexZone 모드, SmartThings 앱 설치 방법, Welcome Lighting 센서 관리, 그리고 제빙기(Ice maker) 관련 문제 해결** 등에 관한 내용을 담고 있습니다.",
+    "question": "How often and how should I clean the washing machine drum?",
+    "answer": "The provided document does **not include information on washing-machine drum cleaning frequency or methods.**\n\nThe document refrigerator **Power Freeze feature, FlexZone , SmartThings app installation , Welcome Lighting sensor management, (Ice maker) troubleshooting** are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2141,8 +2141,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "에어컨 필터 청소는 어떻게 하나요?",
-    "answer": "제공된 문서에는 에어컨 필터 청소 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 **Power Freeze, FlexZone, Beverage Zone, AutoFill Pitcher** 기능 및 **SmartThings** 앱 설치와 관련된 내용을 다루고 있습니다.",
+    "question": "How do I clean the air conditioner filter?",
+    "answer": "The provided document does not include information on how to clean the air conditioner filter. The document refrigerator **Power Freeze, FlexZone, Beverage Zone, AutoFill Pitcher** feature **SmartThings** app installation are covered.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2205,8 +2205,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "에어컨에서 물이 떨어질 때 원인과 해결책은?",
-    "answer": "제공된 문서에는 **에어컨에 관한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고/냉동고의 기능(Power Freeze, FlexZone, AutoFill Pitcher 등)과 소음 문제(Troubleshooting)에 관한 내용을 다루고 있습니다.\n\n문서 내에서 '물이 떨어지는 상황'과 관련된 유일한 언급은 다음과 같습니다:\n* **내용:** 제상 사이클(defrost cycle) 중에 물이 제상 히터에 떨어져 지글거리는 소리(sizzling sounds)가 발생할 수 있습니다.\n* **대상:** 이는 에어컨이 아닌 **냉장고/냉동고**의 작동 과정 중 발생하는 현상에 대한 설명입니다.",
+    "question": "What causes water to drip from the air conditioner and how do I fix it?",
+    "answer": "The provided document **air conditioner regarding this is not included.**\n\nThe document refrigerator/ feature(Power Freeze, FlexZone, AutoFill Pitcher ) noise (Troubleshooting) are covered.\n\n ' ' :\n* **:** (defrost cycle) (sizzling sounds) .\n* **:** air conditioner **refrigerator/** .",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2269,8 +2269,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "에어컨 절전 모드 사용 방법은?",
-    "answer": "제공된 문서에는 **에어컨 절전 모드 사용 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고/냉동고의 기능(Power Freeze, FlexZone, Beverage Zone, AutoFill Pitcher 등)과 SmartThings 앱 설치에 관한 내용을 다루고 있습니다.",
+    "question": "How do I use the air conditioner energy-saving mode?",
+    "answer": "The provided document does **not include information on how to use the air conditioner energy-saving mode.**\n\nThe document refrigerator/ feature(Power Freeze, FlexZone, Beverage Zone, AutoFill Pitcher ) SmartThings app installation are covered.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2333,8 +2333,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "전자레인지 오토 해동 기능 사용법은?",
-    "answer": "제공된 문서에는 **전자레인지의 오토 해동 기능에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 **Power Freeze(급속 냉동), FlexZone(맞춤 보관실), Beverage Zone(음료 보관 존), AutoFill Pitcher(자동 채움 물병)** 및 **SmartThings 앱 설치**와 관련된 기능 및 사용법에 대해서만 설명하고 있습니다.",
+    "question": "How do I use the microwave auto-defrost function?",
+    "answer": "The provided document does **not include information on the microwave auto-defrost function.**\n\nThe document refrigerator **Power Freeze( ), FlexZone( ), Beverage Zone( ), AutoFill Pitcher( )** **SmartThings app installation** feature how to use .",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2397,8 +2397,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
-    "answer": "제공된 문서에는 오븐에서 베이킹할 때의 적정 온도 설정 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 **Power Freeze, FlexZone, AutoFill Pitcher 기능** 및 **SmartThings 앱 사용법, 소음 관련 문제 해결(Troubleshooting)**에 관한 내용을 다루고 있습니다.",
+    "question": "What is the proper temperature setting when baking in the oven?",
+    "answer": "The provided document does not include information on proper oven temperature settings for baking. The document refrigerator **Power Freeze, FlexZone, AutoFill Pitcher feature** **SmartThings app usage, noise troubleshooting(Troubleshooting)** are covered.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2461,8 +2461,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "식기세척기 세제 투입량은 얼마나 되나요?",
-    "answer": "제공된 문서에는 식기세척기 세제 투입량에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 Power Freeze, FlexZone, Beverage Zone, SmartThings 앱 설치 등 냉장고 기능 및 사용법에 관한 내용을 다루고 있습니다.",
+    "question": "How much detergent should I use in the dishwasher?",
+    "answer": "The provided document dishwasher detergent amount regarding this is not included. The document refrigerator Power Freeze, FlexZone, Beverage Zone, SmartThings app installation refrigerator feature how to use are covered.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2525,8 +2525,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
-    "answer": "제공된 문서에는 **식기세척기에 관한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 **Power Freeze(급속 냉동)**, **FlexZone(맞춤 보관)**, **SmartThings 앱 설치 및 사용**, 그리고 냉장고 작동 중 발생할 수 있는 **소음(Troubleshooting)**에 관한 내용을 다루고 있습니다. 따라서 질문하신 식기세척기 세척 불량에 대한 확인 사항은 문서에서 찾을 수 없습니다.",
+    "question": "What should I check when dishes are not cleaned properly in the dishwasher?",
+    "answer": "The provided document **dishwasher regarding this is not included.**\n\nThe document refrigerator **Power Freeze( )**, **FlexZone( )**, **SmartThings app installation **, refrigerator **noise(Troubleshooting)** are covered. dishwasher .",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2589,8 +2589,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "제품 보증 기간과 A/S 신청 방법은?",
-    "answer": "제공된 문서 내용에는 제품 보증 기간과 A/S 신청 방법에 대한 정보가 포함되어 있지 않습니다.",
+    "question": "What is the product warranty period and how do I request service?",
+    "answer": "The provided document product warranty period service request regarding this is not included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2653,8 +2653,8 @@
   {
     "framework": "langgraph",
     "method": "manhattan",
-    "question": "전원 코드 교체 시 주의사항은 무엇인가요?",
-    "answer": "제공된 문서 내용에는 **전원 코드 교체 시 주의사항에 대한 내용이 포함되어 있지 않습니다.**",
+    "question": "What precautions should I take when replacing the power cord?",
+    "answer": "The provided document does **not include precautions for replacing the power cord.**",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2717,8 +2717,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "냉장고 냉동실 온도를 조절하는 방법은?",
-    "answer": "제공된 문서에는 냉장고 냉동실 온도를 조절하는 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 주로 고객 지원 연락처, 문을 닫을 때의 주의사항, 그리고 냉동실 문을 분리하는 방법(Installation)에 관한 내용을 다루고 있습니다.",
+    "question": "How do I adjust the freezer temperature on the refrigerator?",
+    "answer": "The provided document refrigerator freezer adjusting the temperature regarding this is not included. The document , precautions, freezer (Installation) are covered.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2756,8 +2756,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
-    "answer": "제공된 문서에는 냉장고 성에를 제거하는 **제상 방법에 대한 내용은 포함되어 있지 않습니다.**\n\n문서에는 \"수직 경첩 부분에 때때로 습기가 생길 수 있다(Moisture may form at times on the vertical hinged section)\"는 내용만 언급되어 있을 뿐, 성에를 제거하는 구체적인 방법은 나와 있지 않습니다.",
+    "question": "How do I defrost the refrigerator when frost has built up?",
+    "answer": "The provided document refrigerator **defrost method is not included.**\n\nThe document \" (Moisture may form at times on the vertical hinged section)\" , .",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2795,8 +2795,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "냉장고에서 소음이 날 때 원인과 해결 방법은?",
-    "answer": "제공된 문서에는 냉장고에서 소음이 날 때의 원인과 해결 방법에 대한 내용이 포함되어 있지 않습니다.",
+    "question": "What causes noise from the refrigerator and how can I fix it?",
+    "answer": "The provided document refrigerator noise cause solution regarding this is not included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2834,8 +2834,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
-    "answer": "제공된 문서에는 세탁기 탈수와 관련된 내용이 포함되어 있지 않습니다.\n\n해당 문서는 냉장고(또는 냉동고)의 도어 분리 및 설치, 그리고 도어 사용 시 주의사항(힌지 위치, 습기, LED 램프 등)에 관한 내용을 담고 있습니다.",
+    "question": "What should I do when the washing machine will not spin-dry?",
+    "answer": "The provided document washing machine spin-dry is not included.\n\nThe document refrigerator( ) , precautions( , , LED ) are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2873,8 +2873,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "울 소재 의류를 세탁하는 올바른 방법은?",
-    "answer": "제공된 문서에는 울 소재 의류를 세탁하는 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 삼성 제품(냉장고/냉동고로 추정)의 서비스 센터 연락처 및 도어 분리 설치 방법에 관한 내용을 담고 있습니다.",
+    "question": "What is the correct way to wash wool clothing?",
+    "answer": "The provided document does not include information on how to wash wool clothing. The document product(refrigerator/ ) are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2912,8 +2912,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "세탁기 드럼 청소 주기와 방법을 알려주세요.",
-    "answer": "제공된 문서에는 **세탁기 드럼 청소 주기와 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 삼성 냉장고의 도어(freezer doors) 분리 및 설치(Installation) 방법, 주의 사항, 그리고 각 국가별 서비스 센터 연락처에 관한 내용을 담고 있습니다.",
+    "question": "How often and how should I clean the washing machine drum?",
+    "answer": "The provided document does **not include information on washing-machine drum cleaning frequency or methods.**\n\nThe document refrigerator (freezer doors) (Installation) , , are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2951,8 +2951,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "에어컨 필터 청소는 어떻게 하나요?",
-    "answer": "제공된 문서에는 에어컨 필터 청소 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 삼성 제품(냉장고로 추정)의 도어 탈거 방법 및 주의사항에 관한 내용을 담고 있습니다.",
+    "question": "How do I clean the air conditioner filter?",
+    "answer": "The provided document does not include information on how to clean the air conditioner filter. The document product(refrigerator ) precautions are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -2990,8 +2990,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "에어컨에서 물이 떨어질 때 원인과 해결책은?",
-    "answer": "제공된 문서에는 **에어컨에 관한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 삼성 냉장고(또는 냉동고)의 문(door) 탈거 방법, 설치 주의사항, 그리고 각 국가별 서비스 센터 연락처에 관한 내용을 담고 있습니다. 따라서 질문하신 에어컨의 물 떨어짐 현상에 대한 원인과 해결책은 이 문서에서 찾을 수 없습니다.",
+    "question": "What causes water to drip from the air conditioner and how do I fix it?",
+    "answer": "The provided document **air conditioner regarding this is not included.**\n\nThe document refrigerator( ) (door) , precautions, are included. air conditioner cause solution .",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3029,8 +3029,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "에어컨 절전 모드 사용 방법은?",
-    "answer": "제공된 문서에는 에어컨 절전 모드 사용 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 삼성 냉장고(또는 냉동고)의 도어 분리 및 설치와 관련된 안내 사항을 담고 있습니다.",
+    "question": "How do I use the air conditioner energy-saving mode?",
+    "answer": "The provided document air conditioner energy-saving mode how to use regarding this is not included. The document refrigerator( ) are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3068,8 +3068,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "전자레인지 오토 해동 기능 사용법은?",
-    "answer": "제공된 문서에는 전자레인지 오토 해동 기능 사용법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 삼성 냉장고(또는 냉동고)의 도어 분리 및 설치와 관련된 안내 사항을 담고 있습니다.",
+    "question": "How do I use the microwave auto-defrost function?",
+    "answer": "The provided document microwave auto-defrost feature how to use regarding this is not included. The document refrigerator( ) are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3107,8 +3107,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
-    "answer": "제공된 문서에는 오븐에서 베이킹할 때의 적정 온도 설정 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 삼성 냉장고(또는 냉동고)의 도어 분리 및 설치와 관련된 안내 사항을 담고 있습니다.",
+    "question": "What is the proper temperature setting when baking in the oven?",
+    "answer": "The provided document does not include information on proper oven temperature settings for baking. The document refrigerator( ) are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3146,8 +3146,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "식기세척기 세제 투입량은 얼마나 되나요?",
-    "answer": "제공된 문서에는 식기세척기 세제 투입량에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 삼성 냉장고의 도어 분리 및 설치와 관련된 안내 사항을 담고 있습니다.",
+    "question": "How much detergent should I use in the dishwasher?",
+    "answer": "The provided document dishwasher detergent amount regarding this is not included. The document refrigerator are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3185,8 +3185,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
-    "answer": "제공된 문서에는 **식기세척기에 관한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 삼성 냉장고(또는 냉동고)의 문(freezer doors)을 분리하는 방법과 설치 시 주의사항, 그리고 각 국가별 서비스 센터 연락처에 관한 내용을 담고 있습니다. 따라서 질문하신 내용에 대한 답을 문서에서 찾을 수 없습니다.",
+    "question": "What should I check when dishes are not cleaned properly in the dishwasher?",
+    "answer": "The provided document **dishwasher regarding this is not included.**\n\nThe document refrigerator( ) (freezer doors) precautions, are included. .",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3224,8 +3224,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "제품 보증 기간과 A/S 신청 방법은?",
-    "answer": "제공된 문서 내용에는 제품의 **보증 기간에 대한 정보는 명시되어 있지 않습니다.**\n\n다만, **A/S(서비스) 신청 방법**과 관련하여 다음과 같은 내용을 확인할 수 있습니다.\n\n*   **서비스 센터 연락:** 내부 또는 외부 LED 램프가 고장 난 경우, 지역 **삼성 서비스 센터(local Samsung service center)**에 연락해야 합니다.\n*   **온라인 지원:** 삼성 지원 웹사이트(**www.samsung.com/support**)를 통해 도움을 받을 수 있습니다.\n*   **전화 문의:** 문서에 기재된 각 국가별 고객 지원 전화번호로 문의할 수 있습니다. (예: 코스타리카 00-800-1-726-7864, 도미니카 공화국 1-800-751-2676 등)",
+    "question": "What is the product warranty period and how do I request service?",
+    "answer": "The provided document product **warranty period are not specified.**\n\nHowever, **A/S() ** the following can be found.\n\n* ** :** LED , ** (local Samsung service center)** .\n* ** :** (**www.samsung.com/support**) .\n* ** :** . (: 00-800-1-726-7864, 1-800-751-2676 )",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3263,8 +3263,8 @@
   {
     "framework": "langgraph",
     "method": "bm25",
-    "question": "전원 코드 교체 시 주의사항은 무엇인가요?",
-    "answer": "제공된 문서에는 **전원 코드 교체 시 주의사항에 대한 내용이 포함되어 있지 않습니다.**\n\n문서에는 주로 도어(문)를 닫을 때의 주의사항, 냉동실 도어를 분리하는 방법, 그리고 각 국가별 서비스 센터 연락처에 대한 정보만 나와 있습니다.",
+    "question": "What precautions should I take when replacing the power cord?",
+    "answer": "The provided document **when replacing the power cord precautions regarding this is not included.**\n\nThe document () precautions, freezer , are present.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3302,8 +3302,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "냉장고 냉동실 온도를 조절하는 방법은?",
-    "answer": "제공된 문서에는 냉장고의 온도를 조절하는 구체적인 방법(예: 버튼 조작이나 설정 단계 등)에 대한 설명은 나와 있지 않습니다.\n\n다만, 온도와 관련된 기능에 대해서는 다음과 같이 언급되어 있습니다:\n\n*   **Power Freeze 기능**: 팬 속도를 최대로 높여 냉동 과정을 빠르게 합니다. 이 기능은 50시간 동안 최대 속도로 작동한 후 이전 온도로 돌아갑니다.\n*   **FlexZone 모드**: 'Freeze' 모드를 선택하면 온도를 냉동실과 동일한 온도로 설정할 수 있습니다.",
+    "question": "How do I adjust the freezer temperature on the refrigerator?",
+    "answer": "The provided document refrigerator adjusting the temperature (: button operations ) .\n\nHowever, feature are mentioned:\n\n* **Power Freeze feature**: . feature 50 .\n* **FlexZone **: 'Freeze' freezer .",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3341,8 +3341,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
-    "answer": "제공된 문서에는 냉장고 성에가 맺혔을 때의 **제상 방법에 대한 내용은 포함되어 있지 않습니다.**\n\n문서에는 SmartThings 설치 방법, Power Freeze 기능, FlexZone 설정, 문 사용 시 주의사항(수직 경첩 부분에 이슬이 맺힐 수 있다는 내용 포함), Welcome Lighting 센서 관리 방법 등에 대한 정보만 나와 있습니다.",
+    "question": "How do I defrost the refrigerator when frost has built up?",
+    "answer": "The provided document refrigerator when frost has built up **defrost method is not included.**\n\nThe document SmartThings , Power Freeze feature, FlexZone , precautions( ), Welcome Lighting sensor management are present.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3380,8 +3380,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "냉장고에서 소음이 날 때 원인과 해결 방법은?",
-    "answer": "제공된 문서 내용에는 냉장고에서 발생하는 소음의 원인과 해결 방법에 대한 정보가 포함되어 있지 않습니다.\n\n문서에는 SmartThings 앱의 업데이트 정책과 관련하여 \"whooshing sounds may occur(쉬익 하는 소리가 발생할 수 있음)\"라는 문구가 있으나, 이는 냉장고 자체의 소음이 아닌 앱/소프트웨어와 관련된 맥락으로 보입니다. 그 외에 소음과 관련된 내용은 언급되어 있지 않습니다.",
+    "question": "What causes noise from the refrigerator and how can I fix it?",
+    "answer": "The provided document refrigerator noise cause solution regarding this is not included.\n\nThe document SmartThings \"whooshing sounds may occur( )\" , refrigerator noise / . noise .",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3419,8 +3419,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
-    "answer": "제공된 문서에는 **세탁기 탈수가 안 될 때의 해결 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 **Power Freeze(급속 냉동)** 기능, **FlexZone** 설정, **SmartThings** 앱 설치 및 사용, 그리고 문을 닫을 때의 주의사항 등 **냉장고 및 스마트 기능**에 관한 내용을 다루고 있습니다.",
+    "question": "What should I do when the washing machine will not spin-dry?",
+    "answer": "The provided document does **not include guidance on what to do when the washing machine will not spin-dry.**\n\nThe document refrigerator **Power Freeze( )** feature, **FlexZone** , **SmartThings** app installation , precautions **refrigerator feature** are covered.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3458,8 +3458,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "울 소재 의류를 세탁하는 올바른 방법은?",
-    "answer": "제공된 문서에는 울 소재 의류를 세탁하는 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 'Power Freeze' 기능, 'FlexZone' 모드, 'SmartThings' 앱 설치 및 사용, 그리고 제품 관련 고객 서비스 연락처 등에 관한 내용을 담고 있습니다.",
+    "question": "What is the correct way to wash wool clothing?",
+    "answer": "The provided document does not include information on how to wash wool clothing. The document refrigerator 'Power Freeze' feature, 'FlexZone' , 'SmartThings' app installation , product are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3497,8 +3497,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "세탁기 드럼 청소 주기와 방법을 알려주세요.",
-    "answer": "제공된 문서에는 **세탁기 드로 청소 주기와 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 기능(Power Freeze, FlexZone, Welcome Lighting 등) 및 SmartThings 앱 설치, 제품 사용 시 주의사항(문 닫기, 센서 관리 등)에 관한 내용을 담고 있습니다.",
+    "question": "How often and how should I clean the washing machine drum?",
+    "answer": "The provided document **washing machine frequency and method regarding this is not included.**\n\nThe document refrigerator feature(Power Freeze, FlexZone, Welcome Lighting ) SmartThings app installation, product precautions( , sensor management ) are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3536,8 +3536,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "에어컨 필터 청소는 어떻게 하나요?",
-    "answer": "제공된 문서에는 **에어컨 필터 청소 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 **Power Freeze(급속 냉동) 기능, FlexZone 모드, SmartThings 앱 설치 방법, 그리고 도어 관련 주의사항 및 문제 해결(Troubleshooting)**에 관한 내용을 담고 있습니다.",
+    "question": "How do I clean the air conditioner filter?",
+    "answer": "The provided document **air conditioner filter cleaning regarding this is not included.**\n\nThe document refrigerator **Power Freeze( ) feature, FlexZone , SmartThings app installation , precautions troubleshooting(Troubleshooting)** are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3575,8 +3575,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "에어컨에서 물이 떨어질 때 원인과 해결책은?",
-    "answer": "제공된 문서에는 **에어컨에서 물이 떨어질 때의 원인과 해결책에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 'Power Freeze' 기능, 'FlexZone' 모드, 'SmartThings' 앱 설치 방법, 그리고 냉장고 도어 사용 시 주의사항(수직 경첩 부분의 습기 발생 가능성 등)에 관한 내용을 다루고 있습니다.",
+    "question": "What causes water to drip from the air conditioner and how do I fix it?",
+    "answer": "The provided document does **not include information on causes or fixes for water dripping from the air conditioner.**\n\nThe document refrigerator 'Power Freeze' feature, 'FlexZone' , 'SmartThings' app installation , refrigerator precautions( ) are covered.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3614,8 +3614,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "에어컨 절전 모드 사용 방법은?",
-    "answer": "제공된 문서에는 **에어컨 절전 모드 사용 방법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉동 기능인 **Power Freeze**(급속 냉동)와 **FlexZone** 모드, **SmartThings** 앱 설치 방법 및 제품 사용 시 주의사항(도어 관련, LED 램프 등)에 관한 내용을 담고 있습니다.",
+    "question": "How do I use the air conditioner energy-saving mode?",
+    "answer": "The provided document does **not include information on how to use the air conditioner energy-saving mode.**\n\nThe document feature **Power Freeze**( ) **FlexZone** , **SmartThings** app installation product precautions( , LED ) are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3653,8 +3653,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "전자레인지 오토 해동 기능 사용법은?",
-    "answer": "제공된 문서에는 **전자레인지의 오토 해동 기능 사용법에 대한 내용이 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고의 'Power Freeze' 기능, 'FlexZone' 모드, 'SmartThings' 앱 설치 및 사용, 그리고 설치/문제 해결(Troubleshooting)에 관한 내용을 담고 있습니다.",
+    "question": "How do I use the microwave auto-defrost function?",
+    "answer": "The provided document **microwave auto-defrost feature how to use regarding this is not included.**\n\nThe document refrigerator 'Power Freeze' feature, 'FlexZone' , 'SmartThings' app installation , /troubleshooting(Troubleshooting) are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3692,8 +3692,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
-    "answer": "제공된 문서에는 오븐에서 베이킹할 때의 적정 온도 설정 방법에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 **Power Freeze** 기능, **FlexZone** 모드, **SmartThings** 앱 설치 및 사용, 그리고 제품 설치 및 문제 해결(Troubleshooting)에 관한 내용을 다루고 있습니다.",
+    "question": "What is the proper temperature setting when baking in the oven?",
+    "answer": "The provided document does not include information on proper oven temperature settings for baking. The document refrigerator **Power Freeze** feature, **FlexZone** , **SmartThings** app installation , product troubleshooting(Troubleshooting) are covered.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3731,8 +3731,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "식기세척기 세제 투입량은 얼마나 되나요?",
-    "answer": "제공된 문서에는 식기세\n\n제공된 문서에는 식기세척기 세제 투입량에 대한 내용이 포함되어 있지 않습니다. 해당 문서는 냉장고의 'Power Freeze' 기능, 'Flex_Zone' 모드, 'SmartThings' 앱 설치 및 기타 설치/문제 해결 관련 정보만을 담고 있습니다.",
+    "question": "How much detergent should I use in the dishwasher?",
+    "answer": "The provided document \n\nThe provided document dishwasher detergent amount regarding this is not included. The document refrigerator 'Power Freeze' feature, 'Flex_Zone' , 'SmartThings' app installation /troubleshooting are included.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3770,8 +3770,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
-    "answer": "제공된 문서에는 **식기세척기의 세척 성능(식기가 깨끗하게 세척되지 않을 때의 확인사항)에 관한 내용은 포함되어 있지 않습니다.**\n\n해당 문서는 냉장고/냉동고의 **Power Freeze** 기능, **FlexZone** 모드, **SmartThings** 앱 설치 및 사용, 그리고 도어 사용 시 주의사항 등에 관한 내용을 다루고 있습니다.",
+    "question": "What should I check when dishes are not cleaned properly in the dishwasher?",
+    "answer": "The provided document does **not include information on dishwasher cleaning performance (what to check when dishes are not cleaned properly).**\n\nThe document refrigerator/ **Power Freeze** feature, **FlexZone** , **SmartThings** app installation , precautions are covered.",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3809,8 +3809,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "제품 보증 기간과 A/S 신청 방법은?",
-    "answer": "제공된 문서의 내용을 바탕으로 답변드립니다.\n\n* **제품 보증 기간:** 제공된 문서에는 제품의 보증 기간에 대한 정보가 명시되어 있지 않습니다.\n* **A/S 신청 방법:** \n    * 내부 또는 외부 LED 램프가 고장 난 경우, **현지 삼성 서비스 센터(local Samsung service center)**에 연락해야 합니다.\n    * 삼성 지원 웹사이트(**www.samsung.com/support**)를 이용하거나, 문서에 나열된 **각 국가별 고객 지원 전화번호**로 연락하여 도움을 받을 수 있습니다.",
+    "question": "What is the product warranty period and how do I request service?",
+    "answer": ".\n\n* **product warranty period:** The provided document product warranty period regarding this are not specified.\n* **service request :** \n * LED , ** (local Samsung service center)** .\n * (**www.samsung.com/support**) , ** ** .",
     "retrieved_chunks": [
       {
         "rank": 1,
@@ -3848,8 +3848,8 @@
   {
     "framework": "langgraph",
     "method": "hybrid",
-    "question": "전원 코드 교체 시 주의사항은 무엇인가요?",
-    "answer": "제공된 문서 내용에는 **전원 코드 교체 시 주의사항에 대한 정보가 포함되어 있지 않습니다.**",
+    "question": "What precautions should I take when replacing the power cord?",
+    "answer": "The provided document **when replacing the power cord precautions regarding this is not included.**",
     "retrieved_chunks": [
       {
         "rank": 1,

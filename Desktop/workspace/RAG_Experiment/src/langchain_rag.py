@@ -23,10 +23,10 @@ _DISTANCE_MAP = {
 }
 
 _ANSWER_PROMPT = (
-    "다음 문서 내용을 참고하여 질문에 답변해주세요.\n\n"
-    "문서 내용:\n{context}\n\n"
-    "질문: {question}\n\n"
-    "답변:"
+    "Please answer the question based on the following document content.\n\n"
+    "Document content:\n{context}\n\n"
+    "Question: {question}\n\n"
+    "Answer:"
 )
 
 

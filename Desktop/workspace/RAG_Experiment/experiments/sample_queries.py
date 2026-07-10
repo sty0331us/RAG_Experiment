@@ -4,30 +4,30 @@ Covers typical user questions across appliance categories.
 """
 
 QUERIES = [
-    # ── 냉장고 ─────────────────────────────────────────────────────────
-    "냉장고 냉동실 온도를 조절하는 방법은?",
-    "냉장고 성에가 맺혔을 때 제상 방법을 알려주세요.",
-    "냉장고에서 소음이 날 때 원인과 해결 방법은?",
+    # ── Refrigerator ───────────────────────────────────────────────────
+    "How do I adjust the freezer temperature on the refrigerator?",
+    "How do I defrost the refrigerator when frost has built up?",
+    "What causes noise from the refrigerator and how can I fix it?",
 
-    # ── 세탁기 ─────────────────────────────────────────────────────────
-    "세탁기 탈수가 안 될 때 어떻게 해야 하나요?",
-    "울 소재 의류를 세탁하는 올바른 방법은?",
-    "세탁기 드럼 청소 주기와 방법을 알려주세요.",
+    # ── Washing machine ────────────────────────────────────────────────
+    "What should I do when the washing machine will not spin-dry?",
+    "What is the correct way to wash wool clothing?",
+    "How often and how should I clean the washing machine drum?",
 
-    # ── 에어컨 ─────────────────────────────────────────────────────────
-    "에어컨 필터 청소는 어떻게 하나요?",
-    "에어컨에서 물이 떨어질 때 원인과 해결책은?",
-    "에어컨 절전 모드 사용 방법은?",
+    # ── Air conditioner ────────────────────────────────────────────────
+    "How do I clean the air conditioner filter?",
+    "What causes water to drip from the air conditioner and how do I fix it?",
+    "How do I use the air conditioner energy-saving mode?",
 
-    # ── 전자레인지 / 오븐 ────────────────────────────────────────────
-    "전자레인지 오토 해동 기능 사용법은?",
-    "오븐에서 베이킹할 때 적정 온도 설정 방법은?",
+    # ── Microwave / oven ───────────────────────────────────────────────
+    "How do I use the microwave auto-defrost function?",
+    "What is the proper temperature setting when baking in the oven?",
 
-    # ── 식기세척기 ───────────────────────────────────────────────────
-    "식기세척기 세제 투입량은 얼마나 되나요?",
-    "식기세척기에서 식기가 깨끗하게 세척되지 않을 때 확인사항은?",
+    # ── Dishwasher ─────────────────────────────────────────────────────
+    "How much detergent should I use in the dishwasher?",
+    "What should I check when dishes are not cleaned properly in the dishwasher?",
 
-    # ── 일반 / 안전 ──────────────────────────────────────────────────
-    "제품 보증 기간과 A/S 신청 방법은?",
-    "전원 코드 교체 시 주의사항은 무엇인가요?",
+    # ── General / safety ───────────────────────────────────────────────
+    "What is the product warranty period and how do I request service?",
+    "What precautions should I take when replacing the power cord?",
 ]
