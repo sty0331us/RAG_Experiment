@@ -5,6 +5,92 @@ Both the LLM and embedding model run **locally via Ollama**, so there are no API
 
 ---
 
+## System Overview
+
+How the experiment works end-to-end:
+
+```mermaid
+flowchart TB
+    subgraph Input
+        PDF["PDF manuals<br/>(data/pdfs/)"]
+        Q["15 sample queries"]
+    end
+
+    subgraph Prep["1. Prepare knowledge base"]
+        Load["Load PDFs"]
+        Chunk["Chunk text<br/>(size=512, overlap=64)"]
+        Embed["Embed chunks via Ollama<br/>(nomic-embed-text)"]
+        Vectors["Chunk vectors<br/>(238 × 768)"]
+    end
+
+    subgraph Experiment["2. Run experiment matrix"]
+        FW["Frameworks<br/>LlamaIndex · LangChain · LangGraph"]
+        Methods["Similarity methods<br/>cosine · euclidean · dot_product<br/>manhattan · bm25 · hybrid"]
+    end
+
+    subgraph RAG["3. RAG pipeline (per framework × method)"]
+        Retrieve["Retrieve top-k chunks"]
+        Generate["Generate answer<br/>(gemma4:26b via Ollama)"]
+        Eval["Evaluate<br/>(latency + context relevance)"]
+    end
+
+    subgraph Output["4. Outputs"]
+        JSON["results/raw/*.json"]
+        Plots["results/plots/*.png"]
+    end
+
+    PDF --> Load --> Chunk --> Embed --> Vectors
+    Q --> Experiment
+    Vectors --> Experiment
+    FW --> RAG
+    Methods --> RAG
+    Experiment --> Retrieve --> Generate --> Eval
+    Eval --> JSON
+    Eval --> Plots
+```
+
+### RAG query flow
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Runner as Experiment Runner
+    participant Emb as Ollama Embeddings
+    participant Index as Retriever<br/>(FAISS / BM25 / Hybrid)
+    participant LLM as Ollama LLM<br/>(gemma4:26b)
+
+    User->>Runner: Ask a question
+    Runner->>Emb: Embed the query
+    Emb-->>Runner: Query vector
+    Runner->>Index: Search with chosen similarity method
+    Index-->>Runner: Top-k relevant chunks
+    Runner->>LLM: Question + retrieved context
+    LLM-->>Runner: Generated answer
+    Runner-->>User: Answer + latency + context relevance
+```
+
+### Framework differences
+
+```mermaid
+flowchart LR
+    subgraph LlamaIndex
+        LI1["VectorStoreIndex<br/>+ BM25Retriever"] --> LI2["Declarative<br/>query engine"]
+    end
+
+    subgraph LangChain
+        LC1["FAISS / BM25<br/>retriever"] --> LC2["RetrievalChain<br/>(serial steps)"]
+    end
+
+    subgraph LangGraph
+        LG1["retrieve node"] --> LG2["generate node"]
+        LG2 --> LG3["StateGraph<br/>(state machine)"]
+    end
+```
+
+All three frameworks share the same chunk store, embedding model, and similarity backends so the comparison stays fair.
+
+---
+
 ## Experiment Setup
 
 | Item | Details |
