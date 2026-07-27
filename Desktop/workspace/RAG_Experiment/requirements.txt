@@ -16,11 +16,14 @@ llama-index-embeddings-ollama>=0.3.0
 llama-index-llms-ollama>=0.3.0
 llama-index-retrievers-bm25>=0.2.0
 
-# LangChain / LangGraph
+# LangChain
 langchain>=0.2.0
 langchain-community>=0.2.0
 langchain-ollama>=0.1.0
-langgraph>=0.2.0
+
+# Haystack
+haystack-ai>=2.8.0
+ollama-haystack>=2.0.0
 
 # BM25
 rank-bm25>=0.2.2

@@ -32,7 +32,7 @@ from src.visualizer import generate_all_plots
 def parse_args():
     p = argparse.ArgumentParser(description="RAG Experiment Runner")
     p.add_argument("--frameworks", nargs="+", default=None,
-                   choices=["llamaindex", "langchain", "langgraph"],
+                   choices=["llamaindex", "langchain", "haystack"],
                    help="Frameworks to test (default: all three)")
     p.add_argument("--methods", nargs="+", default=None,
                    choices=["cosine", "euclidean", "dot_product", "manhattan", "bm25", "hybrid"],
@@ -67,7 +67,7 @@ def main():
         cfg.llm_model = args.llm_model
 
     logger.info("=" * 60)
-    logger.info("RAG Experiment – LlamaIndex vs LangChain")
+    logger.info("RAG Experiment – LlamaIndex vs LangChain vs Haystack")
     logger.info(f"Frameworks : {cfg.frameworks}")
     logger.info(f"Methods    : {cfg.similarity_methods}")
     logger.info(f"LLM        : {cfg.llm_provider}/{cfg.llm_model}")
@@ -176,9 +176,9 @@ def _build_rag(framework: str, chunks, vectors, cfg, method):
     if framework == "llamaindex":
         from src.llamaindex_rag import LlamaIndexRAG
         return LlamaIndexRAG(chunks, vectors, cfg, method)
-    elif framework == "langgraph":
-        from src.langgraph_rag import LangGraphRAG
-        return LangGraphRAG(chunks, vectors, cfg, method)
+    elif framework == "haystack":
+        from src.haystack_rag import HaystackRAG
+        return HaystackRAG(chunks, vectors, cfg, method)
     else:
         from src.langchain_rag import LangChainRAG
         return LangChainRAG(chunks, vectors, cfg, method)

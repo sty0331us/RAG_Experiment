@@ -18,7 +18,7 @@ plt.rcParams["font.family"] = "AppleGothic"   # Korean font on macOS
 _FRAMEWORK_COLORS = {
     "llamaindex": "#4C72B0",
     "langchain":  "#DD8452",
-    "langgraph":  "#55A868",
+    "haystack":   "#55A868",
 }
 
 
@@ -103,7 +103,7 @@ def plot_framework_comparison(summary: Dict[str, Any], out_dir: Path) -> None:
         ax.tick_params(axis="x", rotation=30)
         ax.legend(title="Framework")
 
-    plt.suptitle("Framework Comparison: LlamaIndex vs LangChain vs LangGraph",
+    plt.suptitle("Framework Comparison: LlamaIndex vs LangChain vs Haystack",
                  fontsize=13, fontweight="bold", y=1.02)
     plt.tight_layout()
     path = out_dir / "framework_comparison.png"

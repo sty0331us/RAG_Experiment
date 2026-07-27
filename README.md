@@ -1,6 +1,6 @@
-# RAG Experiment: LlamaIndex vs LangChain vs LangGraph
+# RAG Experiment: LlamaIndex vs LangChain vs Haystack
 
-A RAG (Retrieval-Augmented Generation) experiment that compares six similarity algorithms across three frameworks: LlamaIndex, LangChain, and LangGraph.  
+A RAG (Retrieval-Augmented Generation) experiment that compares six similarity algorithms across three peer RAG frameworks: LlamaIndex, LangChain, and Haystack.  
 Both the LLM and embedding model run **locally via Ollama**, so there are no API costs.
 
 ---
@@ -24,13 +24,13 @@ flowchart TB
     end
 
     subgraph Experiment["2. Run experiment matrix"]
-        FW["Frameworks<br/>LlamaIndex · LangChain · LangGraph"]
+        FW["Frameworks<br/>LlamaIndex · LangChain · Haystack"]
         Methods["Similarity methods<br/>cosine · euclidean · dot_product<br/>manhattan · bm25 · hybrid"]
     end
 
     subgraph RAG["3. RAG pipeline (per framework × method)"]
         Retrieve["Retrieve top-k chunks"]
-        Generate["Generate answer<br/>(gemma4:26b via Ollama)"]
+        Generate["Generate answer<br/>(llama3.2:3b via Ollama)"]
         Eval["Evaluate<br/>(latency + context relevance)"]
     end
 
@@ -57,7 +57,7 @@ sequenceDiagram
     participant Runner as Experiment Runner
     participant Emb as Ollama Embeddings
     participant Index as Retriever<br/>(FAISS / BM25 / Hybrid)
-    participant LLM as Ollama LLM<br/>(gemma4:26b)
+    participant LLM as Ollama LLM<br/>(llama3.2:3b)
 
     User->>Runner: Ask a question
     Runner->>Emb: Embed the query
@@ -81,9 +81,8 @@ flowchart LR
         LC1["FAISS / BM25<br/>retriever"] --> LC2["RetrievalChain<br/>(serial steps)"]
     end
 
-    subgraph LangGraph
-        LG1["retrieve node"] --> LG2["generate node"]
-        LG2 --> LG3["StateGraph<br/>(state machine)"]
+    subgraph Haystack
+        HS1["InMemoryDocumentStore<br/>+ BM25 / EmbeddingRetriever"] --> HS2["Pipeline<br/>PromptBuilder + Ollama"]
     end
 ```
 
@@ -95,11 +94,11 @@ All three frameworks share the same chunk store, embedding model, and similarity
 
 | Item | Details |
 |------|---------|
-| LLM | `gemma4:26b` via Ollama (local, free) |
+| LLM | `llama3.2:3b` via Ollama (local, free) — also works with `gemma4:26b` |
 | Embedding | `nomic-embed-text` via Ollama (768-dim, local, free) |
-| Frameworks | LlamaIndex, LangChain, LangGraph |
+| Frameworks | LlamaIndex, LangChain, Haystack |
 | Similarity methods | cosine, euclidean, dot_product, manhattan, bm25, hybrid(RRF) |
-| Data | Samsung refrigerator user manual PDF (88 pages → 238 chunks) |
+| Data | Appliance user-manual PDF (`data/pdfs/appliance_manual.pdf`, 15 pages → 9 chunks) |
 | Queries | 15 English questions about home appliances |
 
 ---
@@ -120,7 +119,7 @@ RAG_Experiment/
 │   ├── similarity_search.py    # Six similarity search implementations
 │   ├── llamaindex_rag.py       # LlamaIndex RAG pipeline
 │   ├── langchain_rag.py        # LangChain RAG pipeline
-│   ├── langgraph_rag.py        # LangGraph StateGraph pipeline
+│   ├── haystack_rag.py         # Haystack Pipeline RAG
 │   ├── evaluator.py            # Result evaluation (context relevance, etc.)
 │   └── visualizer.py           # Result visualization (dynamic N-framework support)
 ├── results/
@@ -140,7 +139,7 @@ RAG_Experiment/
 |-----------|----------|-----------------|
 | **LlamaIndex** | VectorStoreIndex + BM25Retriever | Declarative index structure; broad retriever support |
 | **LangChain** | FAISS Vectorstore + RetrievalChain | Chain-based pipeline; large integration ecosystem |
-| **LangGraph** | `retrieve → generate` StateGraph | State-machine based; extensible per-node design |
+| **Haystack** | InMemoryDocumentStore + Pipeline | Component pipeline (retriever → prompt → generator); search-first design |
 
 ---
 
@@ -159,43 +158,45 @@ RAG_Experiment/
 
 ## Experiment Results
 
+Results below are from a full re-run on the appliance manual corpus with `llama3.2:3b` (same model for all frameworks).
+
 ### LlamaIndex
 
 | Method | Total latency (s) | Context relevance |
 |--------|:-----------------:|:-----------------:|
-| cosine | 12.86 | 0.6214 |
-| euclidean | 11.63 | 0.6211 |
-| dot_product | 11.04 | 0.6211 |
-| manhattan | 7.61 | **0.6232** |
-| hybrid | 6.88 | 0.5723 |
-| bm25 | **6.64** | 0.4933 |
+| cosine | 1.93 | 0.6233 |
+| euclidean | 0.70 | 0.6233 |
+| dot_product | **0.70** | 0.6233 |
+| manhattan | 1.63 | **0.6235** |
+| hybrid | 1.47 | 0.6186 |
+| bm25 | 1.61 | 0.6045 |
 
 ### LangChain
 
 | Method | Total latency (s) | Context relevance |
 |--------|:-----------------:|:-----------------:|
-| cosine | 6.82 | **0.6245** |
-| euclidean | 7.02 | **0.6245** |
-| dot_product | 7.36 | **0.6245** |
-| manhattan | 7.87 | 0.6232 |
-| hybrid | 8.23 | 0.5949 |
-| bm25 | **6.43** | 0.5072 |
+| cosine | 1.75 | **0.6236** |
+| euclidean | **0.79** | **0.6236** |
+| dot_product | 0.83 | **0.6236** |
+| manhattan | 1.09 | 0.6235 |
+| hybrid | 1.56 | 0.6171 |
+| bm25 | 1.64 | 0.6038 |
 
-### LangGraph
+### Haystack
 
 | Method | Total latency (s) | Context relevance |
 |--------|:-----------------:|:-----------------:|
-| cosine | 6.97 | **0.6245** |
-| euclidean | **6.75** | **0.6245** |
-| dot_product | 7.05 | **0.6245** |
-| manhattan | 7.44 | 0.6232 |
-| hybrid | 8.15 | 0.5949 |
-| bm25 | 6.31 | 0.5072 |
+| cosine | 1.23 | **0.6236** |
+| euclidean | 0.94 | **0.6236** |
+| dot_product | 0.96 | **0.6236** |
+| manhattan | **0.88** | 0.6235 |
+| hybrid | 1.36 | 0.6194 |
+| bm25 | 1.59 | 0.6037 |
 
 > **Context relevance**: mean cosine similarity between retrieved chunks and the query vector  
-> LlamaIndex dense methods (cosine / euclidean / dot_product) were slower (~11–13s) than LangChain / LangGraph (~7s) at similar relevance  
-> At the same retrieval quality, LangGraph was slightly faster than LangChain on some methods  
-> (LangChain and LangGraph use the same FAISS/BM25 backends — the difference is StateGraph overhead vs serial chain overhead)
+> Dense retrieval quality is nearly identical across frameworks (~0.623–0.624)  
+> At similar relevance, LangChain / LlamaIndex were fastest on some dense methods; Haystack was competitive overall and fastest on manhattan  
+> All three are peer RAG libraries (index / retriever / generator), not agent orchestration layers
 
 ---
 
@@ -207,7 +208,8 @@ Install from [ollama.com](https://ollama.com/download/mac), then:
 
 ```bash
 ollama pull nomic-embed-text   # embedding model (~274MB)
-ollama pull gemma4:26b         # LLM (~16GB)
+ollama pull llama3.2:3b        # LLM used for published results (~2GB)
+# ollama pull gemma4:26b       # optional larger model (~16GB)
 ```
 
 ### 2. Python environment
@@ -235,14 +237,14 @@ python experiments/run_experiments.py --similarity-only
 
 # Specific framework(s)
 python experiments/run_experiments.py --frameworks langchain
-python experiments/run_experiments.py --frameworks langgraph
-python experiments/run_experiments.py --frameworks llamaindex langchain langgraph
+python experiments/run_experiments.py --frameworks haystack
+python experiments/run_experiments.py --frameworks llamaindex langchain haystack
 
 # Specific method(s)
-python experiments/run_experiments.py --frameworks langchain langgraph --methods cosine bm25 hybrid
+python experiments/run_experiments.py --frameworks langchain haystack --methods cosine bm25 hybrid
 
 # Override model directly
-python experiments/run_experiments.py --llm-provider ollama --llm-model gemma4:26b
+python experiments/run_experiments.py --llm-provider ollama --llm-model llama3.2:3b
 ```
 
 ---
@@ -268,6 +270,6 @@ After a run finishes, these files are written under `results/`:
 
 ```env
 OLLAMA_BASE_URL=http://localhost:11434
-LLM_MODEL=gemma4:26b
+LLM_MODEL=llama3.2:3b
 EMBEDDING_MODEL=nomic-embed-text
 ```

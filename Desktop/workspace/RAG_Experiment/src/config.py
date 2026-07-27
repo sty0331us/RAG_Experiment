@@ -16,7 +16,7 @@ BASE_DIR = Path(__file__).parent.parent
 class ExperimentConfig:
     # ── LLM (Ollama only – no API key needed) ────────────────────────────
     llm_provider: str = "ollama"
-    llm_model: str = "gemma4:26b"
+    llm_model: str = "llama3.2:3b"
     ollama_base_url: str = "http://localhost:11434"
     temperature: float = 0.0
 
@@ -44,7 +44,7 @@ class ExperimentConfig:
     ])
 
     # ── Frameworks to benchmark ───────────────────────────────────────────
-    frameworks: List[str] = field(default_factory=lambda: ["llamaindex", "langchain", "langgraph"])
+    frameworks: List[str] = field(default_factory=lambda: ["llamaindex", "langchain", "haystack"])
 
     # ── Paths ─────────────────────────────────────────────────────────────
     data_dir: Path = BASE_DIR / "data" / "pdfs"
