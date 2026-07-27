@@ -159,6 +159,17 @@ RAG_Experiment/
 
 ## Experiment Results
 
+### LlamaIndex
+
+| Method | Total latency (s) | Context relevance |
+|--------|:-----------------:|:-----------------:|
+| cosine | 12.86 | 0.6214 |
+| euclidean | 11.63 | 0.6211 |
+| dot_product | 11.04 | 0.6211 |
+| manhattan | 7.61 | **0.6232** |
+| hybrid | 6.88 | 0.5723 |
+| bm25 | **6.64** | 0.4933 |
+
 ### LangChain
 
 | Method | Total latency (s) | Context relevance |
@@ -182,8 +193,9 @@ RAG_Experiment/
 | bm25 | 6.31 | 0.5072 |
 
 > **Context relevance**: mean cosine similarity between retrieved chunks and the query vector  
+> LlamaIndex dense methods (cosine / euclidean / dot_product) were slower (~11–13s) than LangChain / LangGraph (~7s) at similar relevance  
 > At the same retrieval quality, LangGraph was slightly faster than LangChain on some methods  
-> (Both use the same FAISS/BM25 backends — the difference is StateGraph overhead vs serial chain overhead)
+> (LangChain and LangGraph use the same FAISS/BM25 backends — the difference is StateGraph overhead vs serial chain overhead)
 
 ---
 
