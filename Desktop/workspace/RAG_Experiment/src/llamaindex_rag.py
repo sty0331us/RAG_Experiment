@@ -14,6 +14,8 @@ from llama_index.embeddings.ollama import OllamaEmbedding
 from llama_index.vector_stores.faiss import FaissVectorStore
 
 from .config import ExperimentConfig
+from .prompts import format_answer_prompt
+from .rrf import fuse_text_rankings
 from .similarity_search import SimilaritySearcher
 
 
@@ -90,7 +92,7 @@ class LlamaIndexRAG:
             self._index = VectorStoreIndex.from_documents(documents, storage_context=storage_ctx)
             self._query_engine = self._index.as_query_engine(similarity_top_k=cfg.top_k)
 
-        # Manhattan uses cosine index but we re-rank via SimilaritySearcher post-retrieval
+        # Manhattan uses SimilaritySearcher for proper L1 ranking
         if method == "manhattan":
             self._searcher = SimilaritySearcher(chunks, vectors)
 
@@ -108,29 +110,17 @@ class LlamaIndexRAG:
         elif self.method == "hybrid":
             vec_nodes = self._vector_retriever.retrieve(question)
             bm25_nodes = self._bm25_retriever.retrieve(question)
-            # RRF fusion
-            scores: Dict[str, float] = {}
-            texts: Dict[str, str] = {}
-            k = 60
-            for rank, n in enumerate(vec_nodes):
-                key = n.text[:80]
-                scores[key] = scores.get(key, 0.0) + 1.0 / (k + rank + 1)
-                texts[key] = n.text
-            for rank, n in enumerate(bm25_nodes):
-                key = n.text[:80]
-                scores[key] = scores.get(key, 0.0) + 1.0 / (k + rank + 1)
-                texts[key] = n.text
-            top_keys = sorted(scores, key=scores.get, reverse=True)[: self.cfg.top_k]
-            context = "\n\n".join(texts[k] for k in top_keys)
-            retrieved = [{"rank": i + 1, "score": scores[k], "text": texts[k]} for i, k in enumerate(top_keys)]
+            retrieved = fuse_text_rankings(
+                [
+                    [n.text for n in vec_nodes],
+                    [n.text for n in bm25_nodes],
+                ],
+                top_k=self.cfg.top_k,
+            )
+            context = "\n\n".join(r["text"] for r in retrieved)
             answer, gen_time = self._generate_answer(question, context)
 
         elif self.method == "manhattan" and query_vector is not None:
-            # Retrieve 2× candidates via L2, then re-rank by L1
-            nodes = self._index.as_retriever(similarity_top_k=self.cfg.top_k * 3).retrieve(question)
-            cand_chunks = [{"text": n.text, "metadata": {}} for n in nodes]
-            cand_vecs_raw = np.array([self.cfg._embed_fn(n.text) for n in nodes], dtype=np.float32) if hasattr(self.cfg, "_embed_fn") else None
-            # Fall back to SimilaritySearcher for proper manhattan
             results, _ = self._searcher.search(question, query_vector, "manhattan", self.cfg.top_k)
             context = "\n\n".join(r["text"] for r in results)
             retrieved = results
@@ -158,11 +148,6 @@ class LlamaIndexRAG:
 
     def _generate_answer(self, question: str, context: str) -> tuple[str, float]:
         t0 = time.perf_counter()
-        prompt = (
-            f"Please answer the question based on the following document content.\n\n"
-            f"Document content:\n{context}\n\n"
-            f"Question: {question}\n\n"
-            f"Answer:"
-        )
+        prompt = format_answer_prompt(question, context)
         response = Settings.llm.complete(prompt)
         return str(response), time.perf_counter() - t0

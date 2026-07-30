@@ -14,6 +14,8 @@ from langchain_ollama import OllamaEmbeddings
 from loguru import logger
 
 from .config import ExperimentConfig
+from .prompts import format_answer_prompt
+from .rrf import fuse_text_rankings
 from .similarity_search import SimilaritySearcher
 
 _DISTANCE_MAP = {
@@ -21,13 +23,6 @@ _DISTANCE_MAP = {
     "euclidean": DistanceStrategy.EUCLIDEAN_DISTANCE,
     "dot_product": DistanceStrategy.MAX_INNER_PRODUCT,
 }
-
-_ANSWER_PROMPT = (
-    "Please answer the question based on the following document content.\n\n"
-    "Document content:\n{context}\n\n"
-    "Question: {question}\n\n"
-    "Answer:"
-)
 
 
 def _build_llm(cfg: ExperimentConfig):
@@ -115,20 +110,14 @@ class LangChainRAG:
         elif self.method == "hybrid":
             vec_docs = self._vector_retriever.invoke(question)
             bm25_docs = self._bm25_retriever.invoke(question)
-            k = 60
-            scores: Dict[str, float] = {}
-            texts: Dict[str, str] = {}
-            for rank, d in enumerate(vec_docs):
-                key = d.page_content[:80]
-                scores[key] = scores.get(key, 0.0) + 1.0 / (k + rank + 1)
-                texts[key] = d.page_content
-            for rank, d in enumerate(bm25_docs):
-                key = d.page_content[:80]
-                scores[key] = scores.get(key, 0.0) + 1.0 / (k + rank + 1)
-                texts[key] = d.page_content
-            top_keys = sorted(scores, key=scores.get, reverse=True)[: self.cfg.top_k]
-            context = "\n\n".join(texts[k] for k in top_keys)
-            retrieved = [{"rank": i + 1, "score": scores[k], "text": texts[k]} for i, k in enumerate(top_keys)]
+            retrieved = fuse_text_rankings(
+                [
+                    [d.page_content for d in vec_docs],
+                    [d.page_content for d in bm25_docs],
+                ],
+                top_k=self.cfg.top_k,
+            )
+            context = "\n\n".join(r["text"] for r in retrieved)
             answer, gen_time = self._generate_answer(question, context)
 
         else:
@@ -153,7 +142,7 @@ class LangChainRAG:
 
     def _generate_answer(self, question: str, context: str) -> tuple[str, float]:
         t0 = time.perf_counter()
-        prompt = _ANSWER_PROMPT.format(context=context, question=question)
+        prompt = format_answer_prompt(question, context)
         response = self._llm.invoke([HumanMessage(content=prompt)])
         answer = response.content if hasattr(response, "content") else str(response)
         return answer, time.perf_counter() - t0

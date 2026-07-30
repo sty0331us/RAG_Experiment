@@ -20,6 +20,8 @@ from loguru import logger
 from rank_bm25 import BM25Okapi
 from sklearn.metrics import pairwise_distances
 
+from .rrf import reciprocal_rank_fusion
+
 
 def _tokenize(text: str) -> List[str]:
     """Minimal whitespace tokeniser (works for CJK + Latin)."""
@@ -157,26 +159,23 @@ class SimilaritySearcher:
 
     def _search_hybrid(self, query_text: str, q: np.ndarray, top_k: int, k_rrf: int = 60) -> List[Dict]:
         """Reciprocal Rank Fusion of BM25 and cosine rankings."""
-        # BM25 ranking
         bm25 = self._build_bm25()
         bm25_scores = bm25.get_scores(_tokenize(query_text))
-        bm25_ranks = np.argsort(bm25_scores)[::-1]
+        bm25_ranks = [int(i) for i in np.argsort(bm25_scores)[::-1]]
 
-        # Cosine ranking
         norm = np.linalg.norm(q) + 1e-10
         q_norm = (q / norm).reshape(1, -1)
-        cosine_scores, cosine_indices = self._build_ip_norm().search(q_norm, len(self.chunks))
-        cosine_ranks_order = cosine_indices[0]
+        _, cosine_indices = self._build_ip_norm().search(q_norm, len(self.chunks))
+        cosine_ranks = [int(i) for i in cosine_indices[0]]
 
-        # RRF fusion
-        rrf: Dict[int, float] = {}
-        for rank, doc_id in enumerate(bm25_ranks):
-            rrf[int(doc_id)] = rrf.get(int(doc_id), 0.0) + 1.0 / (k_rrf + rank + 1)
-        for rank, doc_id in enumerate(cosine_ranks_order):
-            rrf[int(doc_id)] = rrf.get(int(doc_id), 0.0) + 1.0 / (k_rrf + rank + 1)
-
-        sorted_ids = sorted(rrf, key=rrf.get, reverse=True)[:top_k]
-        return self._format(np.array(sorted_ids), np.array([rrf[i] for i in sorted_ids]))
+        fused = reciprocal_rank_fusion(
+            [bm25_ranks, cosine_ranks],
+            top_k=top_k,
+            k_rrf=k_rrf,
+        )
+        sorted_ids = np.array([doc_id for doc_id, _ in fused])
+        scores = np.array([score for _, score in fused])
+        return self._format(sorted_ids, scores)
 
     def _format(self, indices: np.ndarray, scores: np.ndarray) -> List[Dict[str, Any]]:
         results = []

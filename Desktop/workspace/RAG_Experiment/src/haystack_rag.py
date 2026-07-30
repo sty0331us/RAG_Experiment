@@ -16,14 +16,9 @@ from haystack_integrations.components.generators.ollama import OllamaChatGenerat
 from loguru import logger
 
 from .config import ExperimentConfig
+from .prompts import format_answer_prompt
+from .rrf import fuse_text_rankings
 from .similarity_search import SimilaritySearcher
-
-_ANSWER_PROMPT = (
-    "Please answer the question based on the following document content.\n\n"
-    "Document content:\n{context}\n\n"
-    "Question: {question}\n\n"
-    "Answer:"
-)
 
 
 class HaystackRAG:
@@ -137,23 +132,14 @@ class HaystackRAG:
                 query_embedding=embed_out["embedding"]
             )["documents"]
             bm25_docs = self._bm25_retriever.run(query=question)["documents"]
-            k = 60
-            scores: Dict[str, float] = {}
-            texts: Dict[str, str] = {}
-            for rank, d in enumerate(vec_docs):
-                key = d.content[:80]
-                scores[key] = scores.get(key, 0.0) + 1.0 / (k + rank + 1)
-                texts[key] = d.content
-            for rank, d in enumerate(bm25_docs):
-                key = d.content[:80]
-                scores[key] = scores.get(key, 0.0) + 1.0 / (k + rank + 1)
-                texts[key] = d.content
-            top_keys = sorted(scores, key=scores.get, reverse=True)[: self.cfg.top_k]
-            context = "\n\n".join(texts[key] for key in top_keys)
-            retrieved = [
-                {"rank": i + 1, "score": scores[key], "text": texts[key]}
-                for i, key in enumerate(top_keys)
-            ]
+            retrieved = fuse_text_rankings(
+                [
+                    [d.content for d in vec_docs],
+                    [d.content for d in bm25_docs],
+                ],
+                top_k=self.cfg.top_k,
+            )
+            context = "\n\n".join(r["text"] for r in retrieved)
             answer, gen_time = self._generate_answer(question, context)
 
         else:
@@ -177,7 +163,7 @@ class HaystackRAG:
 
     def _generate_answer(self, question: str, context: str) -> tuple[str, float]:
         t0 = time.perf_counter()
-        prompt = _ANSWER_PROMPT.format(context=context, question=question)
+        prompt = format_answer_prompt(question, context)
         result = self._llm.run(messages=prompt)
         replies = result.get("replies") or []
         if not replies:
