@@ -111,6 +111,7 @@ RAG_Experiment/
 │   └── pdfs/                   # PDFs used for the experiment
 ├── experiments/
 │   ├── run_experiments.py      # Main experiment runner
+│   ├── ask.py                  # Interactive single-question RAG CLI
 │   └── sample_queries.py       # 15 test queries
 ├── src/
 │   ├── config.py               # Experiment config (models, chunking, top-k, etc.)
@@ -118,6 +119,7 @@ RAG_Experiment/
 │   ├── embeddings.py           # Ollama embedding HTTP wrapper (+ disk cache)
 │   ├── prompts.py              # Shared answer prompt
 │   ├── rrf.py                  # Shared Reciprocal Rank Fusion helper
+│   ├── report.py               # Markdown comparison report writer
 │   ├── similarity_search.py    # Six similarity search implementations
 │   ├── llamaindex_rag.py       # LlamaIndex RAG pipeline
 │   ├── langchain_rag.py        # LangChain RAG pipeline
@@ -251,6 +253,10 @@ python experiments/run_experiments.py --frameworks langchain haystack --methods 
 
 # Override model directly
 python experiments/run_experiments.py --llm-provider ollama --llm-model llama3.2:3b
+
+# Ask a single question interactively (uses cached embeddings when available)
+python experiments/ask.py "How do I clean the air conditioner filter?"
+python experiments/ask.py --framework haystack --method bm25
 ```
 
 ---
@@ -267,6 +273,7 @@ After a run finishes, these files are written under `results/`:
 | `plots/heatmap_avg_ctx_relevance.png` | Relevance heatmap |
 | `plots/heatmap_total_time_s.png` | Latency heatmap |
 | `plots/summary.csv` | Full summary table |
+| `plots/report_latest.md` | Markdown comparison report (also timestamped `report_*.md`) |
 | `raw/rag_results_*.json` | Per-query raw results |
 | `raw/similarity_only.json` | Standalone similarity search benchmark |
 

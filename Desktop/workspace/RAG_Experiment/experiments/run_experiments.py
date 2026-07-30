@@ -25,6 +25,7 @@ from src.config import ExperimentConfig
 from src.data_loader import chunk_documents, load_pdfs
 from src.embeddings import EmbeddingModel
 from src.evaluator import evaluate_single, summarise_results
+from src.report import write_markdown_report
 from src.similarity_search import SimilaritySearcher
 from src.visualizer import generate_all_plots
 
@@ -173,6 +174,10 @@ def main():
     # ── 7. Summarise & visualise ──────────────────────────────────────
     summary = summarise_results(all_rag_results)
     generate_all_plots(summary, cfg.results_dir / "plots")
+    report_path = cfg.results_dir / "plots" / f"report_{ts}.md"
+    write_markdown_report(summary, report_path)
+    # Keep a stable latest pointer for notebooks / quick inspection
+    write_markdown_report(summary, cfg.results_dir / "plots" / "report_latest.md")
 
     logger.info("\n✓ Experiment complete. Check results/plots/ for visualisations.")
 
