@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import time
 from pathlib import Path
 from typing import List, Optional
 
@@ -19,10 +20,12 @@ class EmbeddingModel:
         model_name: str,
         base_url: str = "http://localhost:11434",
         cache_dir: Optional[Path] = None,
+        max_retries: int = 3,
     ):
         self.model_name = model_name
         self.base_url = base_url.rstrip("/")
         self.cache_dir = Path(cache_dir) if cache_dir else None
+        self.max_retries = max_retries
         if self.cache_dir:
             self.cache_dir.mkdir(parents=True, exist_ok=True)
         test_vec = self._call_api(["test"])
@@ -30,13 +33,26 @@ class EmbeddingModel:
         logger.info(f"Embedding model: {model_name} via Ollama, dimension: {self.dimension}")
 
     def _call_api(self, texts: List[str]) -> List[List[float]]:
-        resp = requests.post(
-            f"{self.base_url}/api/embed",
-            json={"model": self.model_name, "input": texts},
-            timeout=120,
-        )
-        resp.raise_for_status()
-        return resp.json()["embeddings"]
+        last_exc: Exception | None = None
+        for attempt in range(1, self.max_retries + 1):
+            try:
+                resp = requests.post(
+                    f"{self.base_url}/api/embed",
+                    json={"model": self.model_name, "input": texts},
+                    timeout=120,
+                )
+                resp.raise_for_status()
+                return resp.json()["embeddings"]
+            except Exception as exc:
+                last_exc = exc
+                wait = min(2 ** attempt, 8)
+                logger.warning(
+                    f"Embedding request failed (attempt {attempt}/{self.max_retries}): {exc}. "
+                    f"Retrying in {wait}s…"
+                )
+                time.sleep(wait)
+        assert last_exc is not None
+        raise last_exc
 
     def _cache_key(self, texts: List[str], normalize: bool) -> str:
         payload = {
