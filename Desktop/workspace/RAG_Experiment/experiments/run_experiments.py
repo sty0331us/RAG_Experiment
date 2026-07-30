@@ -46,6 +46,8 @@ def parse_args():
     p.add_argument("--top-k", type=int, default=5)
     p.add_argument("--similarity-only", action="store_true",
                    help="Only run standalone similarity search (no LLM calls)")
+    p.add_argument("--no-embed-cache", action="store_true",
+                   help="Disable on-disk embedding cache")
     return p.parse_args()
 
 
@@ -65,6 +67,8 @@ def main():
         cfg.llm_provider = args.llm_provider
     if args.llm_model:
         cfg.llm_model = args.llm_model
+    if args.no_embed_cache:
+        cfg.use_embedding_cache = False
 
     logger.info("=" * 60)
     logger.info("RAG Experiment – LlamaIndex vs LangChain vs Haystack")
@@ -82,7 +86,11 @@ def main():
     chunks = chunk_documents(documents, cfg.chunk_size, cfg.chunk_overlap)
 
     # ── 2. Build embeddings ───────────────────────────────────────────
-    embed_model = EmbeddingModel(cfg.embedding_model, base_url=cfg.ollama_base_url)
+    embed_model = EmbeddingModel(
+        cfg.embedding_model,
+        base_url=cfg.ollama_base_url,
+        cache_dir=cfg.cache_dir if cfg.use_embedding_cache else None,
+    )
     cfg.embedding_dimension = embed_model.dimension
 
     logger.info("Encoding all chunks …")

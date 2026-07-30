@@ -49,10 +49,13 @@ class ExperimentConfig:
     # ── Paths ─────────────────────────────────────────────────────────────
     data_dir: Path = BASE_DIR / "data" / "pdfs"
     results_dir: Path = BASE_DIR / "results"
+    cache_dir: Path = BASE_DIR / ".cache" / "embeddings"
+    use_embedding_cache: bool = True
 
     def __post_init__(self):
         self.data_dir = Path(self.data_dir)
         self.results_dir = Path(self.results_dir)
+        self.cache_dir = Path(self.cache_dir)
         (self.results_dir / "raw").mkdir(parents=True, exist_ok=True)
         (self.results_dir / "plots").mkdir(parents=True, exist_ok=True)
 
@@ -61,3 +64,7 @@ class ExperimentConfig:
             self.ollama_base_url = os.getenv("OLLAMA_BASE_URL")
         if os.getenv("LLM_MODEL"):
             self.llm_model = os.getenv("LLM_MODEL")
+        if os.getenv("EMBEDDING_MODEL"):
+            self.embedding_model = os.getenv("EMBEDDING_MODEL")
+        if os.getenv("EMBEDDING_CACHE", "").lower() in {"0", "false", "no"}:
+            self.use_embedding_cache = False

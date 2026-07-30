@@ -115,7 +115,9 @@ RAG_Experiment/
 ├── src/
 │   ├── config.py               # Experiment config (models, chunking, top-k, etc.)
 │   ├── data_loader.py          # PDF loading and chunking
-│   ├── embeddings.py           # Ollama embedding HTTP wrapper
+│   ├── embeddings.py           # Ollama embedding HTTP wrapper (+ disk cache)
+│   ├── prompts.py              # Shared answer prompt
+│   ├── rrf.py                  # Shared Reciprocal Rank Fusion helper
 │   ├── similarity_search.py    # Six similarity search implementations
 │   ├── llamaindex_rag.py       # LlamaIndex RAG pipeline
 │   ├── langchain_rag.py        # LangChain RAG pipeline
@@ -127,6 +129,7 @@ RAG_Experiment/
 │   └── raw/                    # Experiment result JSON
 ├── notebooks/
 │   └── analysis.ipynb          # Result analysis notebook
+├── .cache/embeddings/          # On-disk embedding cache (gitignored)
 ├── .env.example                # Environment variable template
 └── requirements.txt
 ```
@@ -235,6 +238,9 @@ python experiments/run_experiments.py
 # Similarity search only (no LLM calls)
 python experiments/run_experiments.py --similarity-only
 
+# Force re-embed (skip on-disk cache)
+python experiments/run_experiments.py --no-embed-cache
+
 # Specific framework(s)
 python experiments/run_experiments.py --frameworks langchain
 python experiments/run_experiments.py --frameworks haystack
@@ -272,4 +278,5 @@ After a run finishes, these files are written under `results/`:
 OLLAMA_BASE_URL=http://localhost:11434
 LLM_MODEL=llama3.2:3b
 EMBEDDING_MODEL=nomic-embed-text
+EMBEDDING_CACHE=true
 ```
