@@ -13,7 +13,16 @@ import seaborn as sns
 from loguru import logger
 
 sns.set_theme(style="whitegrid", palette="muted", font_scale=1.1)
-plt.rcParams["font.family"] = "AppleGothic"   # Korean font on macOS
+
+# Prefer a CJK-capable font when available; fall back gracefully otherwise.
+from matplotlib import font_manager as _fm
+
+_available = {f.name for f in _fm.fontManager.ttflist}
+for _font in ("AppleGothic", "Noto Sans CJK KR", "Malgun Gothic", "DejaVu Sans"):
+    if _font in _available:
+        plt.rcParams["font.family"] = _font
+        break
+plt.rcParams["axes.unicode_minus"] = False
 
 _FRAMEWORK_COLORS = {
     "llamaindex": "#4C72B0",

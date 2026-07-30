@@ -120,6 +120,7 @@ RAG_Experiment/
 │   ├── prompts.py              # Shared answer prompt
 │   ├── rrf.py                  # Shared Reciprocal Rank Fusion helper
 │   ├── report.py               # Markdown comparison report writer
+│   ├── factory.py              # Shared RAG pipeline factory
 │   ├── similarity_search.py    # Six similarity search implementations
 │   ├── llamaindex_rag.py       # LlamaIndex RAG pipeline
 │   ├── langchain_rag.py        # LangChain RAG pipeline
@@ -250,6 +251,9 @@ python experiments/run_experiments.py --frameworks llamaindex langchain haystack
 
 # Specific method(s)
 python experiments/run_experiments.py --frameworks langchain haystack --methods cosine bm25 hybrid
+
+# Smoke test with a small query subset
+python experiments/run_experiments.py --limit-queries 3 --frameworks langchain --methods cosine
 
 # Override model directly
 python experiments/run_experiments.py --llm-provider ollama --llm-model llama3.2:3b

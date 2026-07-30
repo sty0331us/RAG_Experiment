@@ -39,8 +39,8 @@ def write_markdown_report(summary: Dict[str, Any], out_path: Path) -> Path:
         "",
         "## Summary table",
         "",
-        "| Framework | Method | Total latency (s) | Retrieval (s) | Generation (s) | Context relevance | Answer length | Queries |",
-        "|-----------|--------|------------------:|--------------:|---------------:|------------------:|--------------:|--------:|",
+        "| Framework | Method | Total latency (s) | Retrieval (s) | Generation (s) | Context relevance | Source diversity | Answer length | Queries |",
+        "|-----------|--------|------------------:|--------------:|---------------:|------------------:|-----------------:|--------------:|--------:|",
     ]
 
     for _, row in df.iterrows():
@@ -50,6 +50,7 @@ def write_markdown_report(summary: Dict[str, Any], out_path: Path) -> Path:
             f"| {row['retrieval_time_s']:.3f} "
             f"| {row['gen_time_s']:.3f} "
             f"| {row['avg_ctx_relevance']:.4f} "
+            f"| {row.get('source_diversity', 0):.3f} "
             f"| {row['answer_length']:.0f} "
             f"| {int(row['n_queries'])} |"
         )

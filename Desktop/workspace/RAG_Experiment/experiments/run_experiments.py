@@ -25,6 +25,7 @@ from src.config import ExperimentConfig
 from src.data_loader import chunk_documents, load_pdfs
 from src.embeddings import EmbeddingModel
 from src.evaluator import evaluate_single, summarise_results
+from src.factory import build_rag
 from src.report import write_markdown_report
 from src.similarity_search import SimilaritySearcher
 from src.visualizer import generate_all_plots
@@ -40,6 +41,8 @@ def parse_args():
                    help="Similarity methods to test (default: all)")
     p.add_argument("--queries", nargs="+", default=None,
                    help="Custom query strings (default: sample_queries.py)")
+    p.add_argument("--limit-queries", type=int, default=None,
+                   help="Only run the first N queries (useful for smoke tests)")
     p.add_argument("--llm-provider", default=None, choices=["openai", "ollama"])
     p.add_argument("--llm-model", default=None)
     p.add_argument("--chunk-size", type=int, default=512)
@@ -108,6 +111,8 @@ def main():
     else:
         from experiments.sample_queries import QUERIES
         queries = QUERIES
+    if args.limit_queries is not None:
+        queries = queries[: max(0, args.limit_queries)]
 
     logger.info(f"Running {len(queries)} queries")
 
@@ -147,7 +152,7 @@ def main():
         for method in cfg.similarity_methods:
             logger.info(f"\n  Method: {method}")
             try:
-                rag = _build_rag(framework, chunks, vectors, cfg, method)
+                rag = build_rag(framework, chunks, vectors, cfg, method)
             except Exception as exc:
                 logger.error(f"Failed to build {framework}/{method}: {exc}")
                 continue
@@ -183,18 +188,6 @@ def main():
 
 
 # ── helpers ──────────────────────────────────────────────────────────────
-
-
-def _build_rag(framework: str, chunks, vectors, cfg, method):
-    if framework == "llamaindex":
-        from src.llamaindex_rag import LlamaIndexRAG
-        return LlamaIndexRAG(chunks, vectors, cfg, method)
-    elif framework == "haystack":
-        from src.haystack_rag import HaystackRAG
-        return HaystackRAG(chunks, vectors, cfg, method)
-    else:
-        from src.langchain_rag import LangChainRAG
-        return LangChainRAG(chunks, vectors, cfg, method)
 
 
 def _save_json(data, path: Path):

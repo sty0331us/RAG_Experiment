@@ -20,6 +20,7 @@ sys.path.insert(0, str(ROOT))
 from src.config import ExperimentConfig
 from src.data_loader import chunk_documents, load_pdfs
 from src.embeddings import EmbeddingModel
+from src.factory import build_rag
 
 
 def parse_args():
@@ -32,17 +33,6 @@ def parse_args():
     p.add_argument("--top-k", type=int, default=5)
     p.add_argument("--no-embed-cache", action="store_true")
     return p.parse_args()
-
-
-def _build_rag(framework: str, chunks, vectors, cfg, method):
-    if framework == "llamaindex":
-        from src.llamaindex_rag import LlamaIndexRAG
-        return LlamaIndexRAG(chunks, vectors, cfg, method)
-    if framework == "haystack":
-        from src.haystack_rag import HaystackRAG
-        return HaystackRAG(chunks, vectors, cfg, method)
-    from src.langchain_rag import LangChainRAG
-    return LangChainRAG(chunks, vectors, cfg, method)
 
 
 def main():
@@ -70,7 +60,7 @@ def main():
     cfg.embedding_dimension = embed_model.dimension
     vectors = embed_model.embed([c["text"] for c in chunks], normalize=False)
 
-    rag = _build_rag(args.framework, chunks, vectors, cfg, args.method)
+    rag = build_rag(args.framework, chunks, vectors, cfg, args.method)
     q_vec = embed_model.embed_query(question, normalize=False)
     result = rag.query(question, query_vector=q_vec)
 
